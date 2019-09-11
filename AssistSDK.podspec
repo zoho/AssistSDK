@@ -46,21 +46,13 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, '8.0'
   s.ios.deployment_target = '8.0'
 
-  s.source           = {:git => "https://github.com/zoho/AssistSDK.git" :commit => "9adea22e63f0af984972c4e3cc5de0d62dd8f3c2"}
+  s.source           = {:git => "https://github.com/zoho/AssistSDK.git"}
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
   s.social_media_url = "http://zoho.com"
   # s.source_files = 'AssistScreenShareKit.framework/Headers/*.{h,m,swift}'
-  s.ios.vendored_frameworks = 'AssistSDK.framework'
-  # s.public_header_files = "AssistScreenShareKit.framework/Headers/*.h"
-  s.module_map = 'AssistSDK.framework/Modules/module.modulemap'
+  s.ios.vendored_frameworks = 'SDK/AssistSDK.framework'
+  # s.public_header_files = "SDK/AssistScreenShareKit.framework/Headers/*.h"
+  s.module_map = 'SDK/AssistSDK.framework/Modules/module.modulemap'
   s.module_name  = 'AssistSDK'
 end
-
-# https://download-accl.zoho.com/v1/docs/download/a8lsu31315b6ed5964481a013b9d236098077
-
-#https://docs.zoho.com/docs/orig/a8lsu31315b6ed5964481a013b9d236098077
-
-#https://www.zoho.com/salesiq/downloads/plugins/Mobilisten.zip
-
-#https://dl.google.com/dl/cpdc/af2365f0e660f9e3/GoogleWebRTC-1.1.19878.tar.gz
