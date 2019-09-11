@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "AssistScreenShareKit"
+  s.name         = "AssistSDK"
   s.version      = "0.1.73"
   s.summary      = "A screen sharing framework for Zoho Assist"
 
@@ -45,15 +45,16 @@ Pod::Spec.new do |s|
   s.author       = { "Kishore Kumar" => "kishorekumar.n@zohocorp.com" }
   # s.platform     = :ios, '8.0'
   s.ios.deployment_target = '8.0'
-  s.source           = { :http => "https://www.dropbox.com/s/y3vp0aprfhqanio/AssistScreenShareKit.framework.zip?dl=1" }
+
+  s.source           = {:git => "https://github.com/zoho/AssistSDK.git" :commit => "9adea22e63f0af984972c4e3cc5de0d62dd8f3c2"}
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
   s.social_media_url = "http://zoho.com"
   # s.source_files = 'AssistScreenShareKit.framework/Headers/*.{h,m,swift}'
-  s.ios.vendored_frameworks = 'AssistScreenShareKit.framework'
+  s.ios.vendored_frameworks = 'AssistSDK.framework'
   # s.public_header_files = "AssistScreenShareKit.framework/Headers/*.h"
-  s.module_map = 'AssistScreenShareKit.framework/Modules/module.modulemap'
-  s.module_name  = 'AssistScreenShareKit'
+  s.module_map = 'AssistSDK.framework/Modules/module.modulemap'
+  s.module_name  = 'AssistSDK'
 end
 
 # https://download-accl.zoho.com/v1/docs/download/a8lsu31315b6ed5964481a013b9d236098077
