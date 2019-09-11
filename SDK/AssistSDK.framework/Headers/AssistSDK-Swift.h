@@ -217,17 +217,12 @@ enum SwitchRollStatus : NSInteger;
 SWIFT_PROTOCOL("_TtP9AssistSDK21AssistSessionCallBack_")
 @protocol AssistSessionCallBack
 @optional
-/// Once the socket is prepared and connected with the gateway,
-/// this method will notify you.
-- (void)didConnectSocket;
-/// If the socket connection is failed to connect with gateway,
-/// this method will notify you.
+/// If sesion is disconnected this method will notify you.
 /// \param state SocketDisconnectStatus is an enum and it will returns
 /// reason for the disconnection.
 ///
-- (void)didSocketWithDisconnected:(enum SocketDisconnectStatus)state;
-/// When the session is connected with the gateway successfully,
-/// this method will notify you.
+- (void)didSessionWithDisconnected:(enum SocketDisconnectStatus)state;
+/// When assist session is completely connected this method will notify you.
 - (void)didSessionConnected;
 /// We can change the image quality in ZohoAssist viewer.
 /// Whenever the image quality is changed, it will notify you.
@@ -248,13 +243,11 @@ SWIFT_PROTOCOL("_TtP9AssistSDK21AssistSessionCallBack_")
 /// \param id viewer id
 ///
 - (void)leftSessionWithViewer:(NSString * _Nonnull)id;
-/// Whenever the viewer lost session connection,
-/// this method will notify you.
+/// Whenever the viewer has lost session connection this method will notify you.
 /// \param id viewer id
 ///
 - (void)connectionLostWithViewer:(NSString * _Nonnull)id;
-/// Whenever chat message recevied from gateway,
-/// this method will notify you.
+/// Whenever chat message recevied from technician this method will notify you.
 /// \param chat Chat message
 ///
 /// \param viewerid Viewer ID
@@ -266,7 +259,7 @@ SWIFT_PROTOCOL("_TtP9AssistSDK21AssistSessionCallBack_")
 - (void)switchRollWithStatus:(enum SwitchRollStatus)status;
 /// Called before free session end
 - (void)willEndFreeSession SWIFT_DEPRECATED_MSG("This method will be removed in upcoming updates");
-/// Called once gw sends the features list. For more check AssistFeatures enum.
+/// Return all available features
 - (void)onFeaturesReceived:(NSArray * _Nonnull)features;
 @end
 
