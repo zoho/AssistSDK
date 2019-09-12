@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="auN-8R-D4y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XJ9-cE-hF7">
+            <objects>
+                <viewController id="auN-8R-D4y" customClass="ViewController" customModule="ScreenShareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fxw-jb-4CA"/>
+                        <viewControllerLayoutGuide type="bottom" id="a9G-P0-Fc2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a1H-sb-0Yg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter session key" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RhX-uQ-vGW">
+                                <rect key="frame" x="16" y="123" width="251" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="auN-8R-D4y" id="bBv-QY-New"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation Status Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-xg-uIV">
+                                <rect key="frame" x="14.5" y="161" width="346.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KrA-ff-Vbi">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8X-s9-QXS">
+                                <rect key="frame" x="296" y="123" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startSession:" destination="auN-8R-D4y" eventType="touchUpInside" id="qOy-Qc-pgp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2hn-xg-uIV" firstAttribute="top" secondItem="RhX-uQ-vGW" secondAttribute="bottom" constant="8" id="0lf-gv-9Aq"/>
+                            <constraint firstItem="KrA-ff-Vbi" firstAttribute="centerX" secondItem="a1H-sb-0Yg" secondAttribute="centerX" id="6WL-Yf-kXA"/>
+                            <constraint firstAttribute="trailing" secondItem="q8X-s9-QXS" secondAttribute="trailing" constant="45" id="Go6-8L-GZa"/>
+                            <constraint firstItem="2hn-xg-uIV" firstAttribute="leading" secondItem="a1H-sb-0Yg" secondAttribute="leading" constant="14.5" id="KG9-ia-g9G"/>
+                            <constraint firstItem="KrA-ff-Vbi" firstAttribute="centerY" secondItem="a1H-sb-0Yg" secondAttribute="centerY" id="PLd-nV-pLM"/>
+                            <constraint firstItem="q8X-s9-QXS" firstAttribute="centerY" secondItem="RhX-uQ-vGW" secondAttribute="centerY" id="QdA-Iw-fHa"/>
+                            <constraint firstItem="RhX-uQ-vGW" firstAttribute="leading" secondItem="a1H-sb-0Yg" secondAttribute="leadingMargin" id="d7x-jg-FV2"/>
+                            <constraint firstItem="RhX-uQ-vGW" firstAttribute="top" secondItem="fxw-jb-4CA" secondAttribute="bottom" constant="103" id="iHq-UM-8Ft"/>
+                            <constraint firstAttribute="trailing" secondItem="2hn-xg-uIV" secondAttribute="trailing" constant="14" id="j1O-EF-TO7"/>
+                            <constraint firstItem="q8X-s9-QXS" firstAttribute="leading" secondItem="RhX-uQ-vGW" secondAttribute="trailing" constant="29" id="vuc-fl-dfp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3fP-Cz-zFe"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="2hn-xg-uIV" id="FO5-c7-6bd"/>
+                        <outlet property="loader" destination="KrA-ff-Vbi" id="QvN-d8-nZ1"/>
+                        <outlet property="textview" destination="RhX-uQ-vGW" id="r4W-G3-FUD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFL-ua-NaO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+
+target 'BroadCastApp' do
+
+  pod "AssistSDK", :git => 'https://github.com/zoho/AssistSDK.git'
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for BroadCastApp
+
+end
+
+target 'ScreenShareDemo' do
+  pod "AssistSDK", :git => 'https://github.com/zoho/AssistSDK.git'
+
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ScreenShareDemo
+
+end
