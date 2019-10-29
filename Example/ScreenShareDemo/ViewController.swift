@@ -40,7 +40,7 @@ class ViewController: UIViewController,UITextViewDelegate {
         if let id = textview.text, !id.isEmpty {
             
 //            APP TOKEN
-            let token = "wSsVR60n+hf1Ca8ozjSrde47yA5QB1v/EEV42FH16SX9F6vC8cc5lEGfDFOgTaMYEWdsQGZHprh8kRYD1DcIiNotzVlSDyiF9mqRe1U4J3x1pLnvkT7OV21dkxOILY4LwgxqmA=="
+            let token = "Abcd@123"
             
 //            Validating token and registering session id
 //            At completion you will get SessionValidation enum response

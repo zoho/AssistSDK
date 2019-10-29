@@ -2,11 +2,11 @@
 //  AssistSDK.h
 //  AssistSDK
 //
-//  Created by kishore Kumar on 09/09/19.
+//  Created by kishore Kumar on 29/10/19.
 //  Copyright © 2019 Kishore Kumar. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for AssistSDK.
 FOUNDATION_EXPORT double AssistSDKVersionNumber;
