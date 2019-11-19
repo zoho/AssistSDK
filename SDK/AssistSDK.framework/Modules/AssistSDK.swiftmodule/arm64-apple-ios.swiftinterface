@@ -33,13 +33,13 @@ extension UIDevice {
   public var features: [AssistSDK.AssistFeatures] {
     get
   }
-  required public init?(delegate: AssistSDK.AssistSessionCallBack? = nil, image quality: AssistSDK.ScreenQuality = .good)
+  required public init?(delegate: AssistSDK.AssistSessionCallBack? = nil, appGroup identifier: Swift.String, image quality: AssistSDK.ScreenQuality = .good)
   public func stopSession()
   public func resumeSession()
   public func endSession()
   public func addImage(buffer: CoreMedia.CMSampleBuffer)
   public func send(chat message: Swift.String)
-  public class func register(session id: Swift.String, token: Swift.String, completion: @escaping (AssistSDK.SessionValidation) -> Swift.Void)
+  public class func register(session id: Swift.String, token: Swift.String, appGroup identifier: Swift.String, completion: @escaping (AssistSDK.SessionValidation) -> Swift.Void)
   public class func resetSessionInfo()
   public func requestSwitchRoll(withViewer id: Swift.String)
   public func switchRoll(accepted: Swift.Bool)
