@@ -1,0 +1,144 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
+// swift-module-flags: -target x86_64-apple-ios8.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AssistSDK
+@_exported import AssistSDK
+import CommonCrypto
+import CoreFoundation
+import CoreGraphics
+import CoreMedia
+import Foundation
+import Photos
+import ReplayKit.RPBroadcast
+import ReplayKit
+import Security
+import Swift
+import UIKit
+import zlib
+extension UIDevice {
+  public var isIPad: Swift.Bool {
+    get
+  }
+  public var isHighResIPad: Swift.Bool {
+    get
+  }
+  public var modelName: Swift.String {
+    get
+  }
+}
+@objc public class AssistSession : ObjectiveC.NSObject {
+  public var isNetworkAvailable: Swift.Bool {
+    get
+    set
+  }
+  public var features: [AssistSDK.AssistFeatures] {
+    get
+  }
+  required public init?(delegate: AssistSDK.AssistSessionCallBack? = nil, image quality: AssistSDK.ScreenQuality = .good)
+  public func stopSession()
+  public func resumeSession()
+  public func endSession()
+  public func addImage(buffer: CoreMedia.CMSampleBuffer)
+  public func send(chat message: Swift.String)
+  public class func register(session id: Swift.String, token: Swift.String, completion: @escaping (AssistSDK.SessionValidation) -> Swift.Void)
+  public class func resetSessionInfo()
+  public func requestSwitchRoll(withViewer id: Swift.String)
+  public func switchRoll(accepted: Swift.Bool)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol AssistSessionCallBack {
+  @objc optional func didSession(disconnected state: AssistSDK.SocketDisconnectStatus)
+  @objc optional func didSessionConnected()
+  @objc optional func didChangeImage(quality: AssistSDK.ScreenQuality)
+  @objc optional func joinedSession(viewer id: Swift.String, name viewer: Swift.String, viewer type: Swift.String)
+  @objc optional func leftSession(viewer id: Swift.String)
+  @objc optional func connectionLost(viewer id: Swift.String)
+  @objc optional func didReceived(chat: Swift.String, from viewerid: Swift.String)
+  @objc optional func switchRoll(status: AssistSDK.SwitchRollStatus)
+  @available(*, deprecated, message: "This method will be removed in upcoming updates")
+  @objc optional func willEndFreeSession()
+  @objc optional func onFeaturesReceived(_ features: Foundation.NSArray)
+}
+public enum AssistSessionMode {
+  case access, support
+  public static func == (a: AssistSDK.AssistSessionMode, b: AssistSDK.AssistSessionMode) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc public enum AssistFeatures : Swift.Int {
+  case allowSession = 1
+  case chat
+  case clipBoard
+  case uac
+  case multimonitor
+  case ctrlAltDel
+  case powerOptions
+  case fileTransfer
+  case inviteTechnician
+  case twoWayScreenShare
+  case captureScreen
+  case groupComputer
+  case searchShort
+  case computerStatus
+  case requestControl
+  case freeLicense
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ScreenQuality : Swift.Int {
+  case low = 1, good, best, full
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum SwitchRollStatus : Swift.Int {
+  case unknown = 0, accepted, gwreject, userReject, timeout, technicianRequested
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum SocketDisconnectStatus : Swift.Int {
+  case unknown = 0, diffcon, invalidkey, switchgw, customerended, technicianended, internetlost, duplicateClient, switchRoll
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum SessionValidation {
+  case success
+  case failure(Swift.Error?)
+  public enum FailureState : Swift.Error {
+    case paramMissing, invalidKey, sessionKeyExpired, authenticationFailed, featureNotAvailable, notAllowed, internalError, invalidLicenseKey
+    public static func == (a: AssistSDK.SessionValidation.FailureState, b: AssistSDK.SessionValidation.FailureState) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+}
+extension AssistSDK.ScreenQuality : Swift.Equatable {}
+extension AssistSDK.ScreenQuality : Swift.Hashable {}
+extension AssistSDK.ScreenQuality : Swift.RawRepresentable {}
+extension AssistSDK.AssistSessionMode : Swift.Equatable {}
+extension AssistSDK.AssistSessionMode : Swift.Hashable {}
+extension AssistSDK.AssistFeatures : Swift.Equatable {}
+extension AssistSDK.AssistFeatures : Swift.Hashable {}
+extension AssistSDK.AssistFeatures : Swift.RawRepresentable {}
+extension AssistSDK.SwitchRollStatus : Swift.Equatable {}
+extension AssistSDK.SwitchRollStatus : Swift.Hashable {}
+extension AssistSDK.SwitchRollStatus : Swift.RawRepresentable {}
+extension AssistSDK.SocketDisconnectStatus : Swift.Equatable {}
+extension AssistSDK.SocketDisconnectStatus : Swift.Hashable {}
+extension AssistSDK.SocketDisconnectStatus : Swift.RawRepresentable {}
+extension AssistSDK.SessionValidation.FailureState : Swift.Equatable {}
+extension AssistSDK.SessionValidation.FailureState : Swift.Hashable {}
