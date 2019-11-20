@@ -19,7 +19,7 @@ class SampleHandler: RPBroadcastSampleHandler {
 
         // After you registered the session key create AssistSession object will initiated.
         
-         guard let assistObject =  AssistSession(delegate: self, image: .best) else {
+        guard let assistObject =  AssistSession(delegate: self, appGroup: "group.com.example.appgroup", image: .best) else {
             
             // WARNING: Possible reason for this block execution
             

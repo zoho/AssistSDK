@@ -45,7 +45,7 @@ class ViewController: UIViewController,UITextViewDelegate {
 //            Validating token and registering session id
 //            At completion you will get SessionValidation enum response
             
-            AssistSession.register(session: id, token: token) {[weak self] (validationState) in
+            AssistSession.register(session: id, token: token, appGroup: "group.com.example.appgroup") {[weak self] (validationState) in
                 
 //                Session registration completion block
                 
