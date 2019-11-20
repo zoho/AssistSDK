@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AssistSDK"
-  s.version      = "0.1.73"
+  s.version      = "0.1.8"
   s.summary      = "A screen sharing framework for Zoho Assist"
 
   # This description is used to generate tags and improve search results.
