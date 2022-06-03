@@ -2,8 +2,7 @@
 //  AssistSDK.h
 //  AssistSDK
 //
-//  Created by kishore Kumar on 29/10/19.
-//  Copyright © 2019 Kishore Kumar. All rights reserved.
+//  Created by kishore Kumar on 03/06/22.
 //
 
 #import <Foundation/Foundation.h>

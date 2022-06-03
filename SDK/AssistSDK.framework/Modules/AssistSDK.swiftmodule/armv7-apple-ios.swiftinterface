@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
-// swift-module-flags: -target armv7-apple-ios8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AssistSDK
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AssistSDK
 @_exported import AssistSDK
 import CommonCrypto
 import CoreFoundation
@@ -13,15 +13,16 @@ import ReplayKit
 import Security
 import Swift
 import UIKit
+import _Concurrency
 import zlib
-extension UIDevice {
-  public var isIPad: Swift.Bool {
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var isIPad: Swift.Bool {
     get
   }
-  public var isHighResIPad: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) public var isHighResIPad: Swift.Bool {
     get
   }
-  public var modelName: Swift.String {
+  @_Concurrency.MainActor(unsafe) public var modelName: Swift.String {
     get
   }
 }
@@ -43,7 +44,6 @@ extension UIDevice {
   public class func resetSessionInfo()
   public func requestSwitchRoll(withViewer id: Swift.String)
   public func switchRoll(accepted: Swift.Bool)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol AssistSessionCallBack {
@@ -62,10 +62,10 @@ extension UIDevice {
 public enum AssistSessionMode {
   case access, support
   public static func == (a: AssistSDK.AssistSessionMode, b: AssistSDK.AssistSessionMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc public enum AssistFeatures : Swift.Int {
   case allowSession = 1
@@ -84,32 +84,32 @@ public enum AssistSessionMode {
   case computerStatus
   case requestControl
   case freeLicense
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc public enum ScreenQuality : Swift.Int {
   case low = 1, good, best, full
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc public enum SwitchRollStatus : Swift.Int {
   case unknown = 0, accepted, gwreject, userReject, timeout, technicianRequested
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc public enum SocketDisconnectStatus : Swift.Int {
   case unknown = 0, diffcon, invalidkey, switchgw, customerended, technicianended, internetlost, duplicateClient, switchRoll
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -120,10 +120,10 @@ public enum SessionValidation {
   public enum FailureState : Swift.Error {
     case paramMissing, invalidKey, sessionKeyExpired, authenticationFailed, featureNotAvailable, notAllowed, internalError, invalidLicenseKey
     public static func == (a: AssistSDK.SessionValidation.FailureState, b: AssistSDK.SessionValidation.FailureState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
 }
 extension AssistSDK.ScreenQuality : Swift.Equatable {}
