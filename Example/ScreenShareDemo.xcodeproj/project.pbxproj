@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -105,7 +105,6 @@
 				B405B0BF4BC0FDD9B2445B20 /* Pods-ScreenShareDemo.debug.xcconfig */,
 				7A3733ABAE2FD90F45341017 /* Pods-ScreenShareDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,7 +176,7 @@
 				C230B11A22929D7500B9BB80 /* Resources */,
 				C230B13522929DE400B9BB80 /* Embed Frameworks */,
 				C230B15A22929E0500B9BB80 /* Embed App Extensions */,
-				B43F4680CE8FD98719DD73BE /* [CP] Embed Pods Frameworks */,
+				DA5AC3E1CC59A9196A7961B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,7 +296,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B43F4680CE8FD98719DD73BE /* [CP] Embed Pods Frameworks */ = {
+		DA5AC3E1CC59A9196A7961B7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -517,6 +516,7 @@
 					"$(PROJECT_DIR)/ScreenShareDemo",
 				);
 				INFOPLIST_FILE = ScreenShareDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +544,7 @@
 					"$(PROJECT_DIR)/ScreenShareDemo",
 				);
 				INFOPLIST_FILE = ScreenShareDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,6 +570,7 @@
 					"$(PROJECT_DIR)/ScreenShareDemo",
 				);
 				INFOPLIST_FILE = BroadCastApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,6 +598,7 @@
 					"$(PROJECT_DIR)/ScreenShareDemo",
 				);
 				INFOPLIST_FILE = BroadCastApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

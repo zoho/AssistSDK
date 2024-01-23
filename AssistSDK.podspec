@@ -44,15 +44,20 @@ Pod::Spec.new do |s|
 }
   s.author       = { "Kishore Kumar" => "kishorekumar.n@zohocorp.com" }
   # s.platform     = :ios, '8.0'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source           = {:git => "https://github.com/zoho/AssistSDK.git"}
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
   s.social_media_url = "http://zoho.com"
   # s.source_files = 'AssistScreenShareKit.framework/Headers/*.{h,m,swift}'
-  s.ios.vendored_frameworks = 'SDK/AssistSDK.framework'
+  s.ios.vendored_frameworks = 'SDK/AssistSDK.xcframework'
   # s.public_header_files = "SDK/AssistScreenShareKit.framework/Headers/*.h"
   s.module_map = 'SDK/AssistSDK.framework/Modules/module.modulemap'
   s.module_name  = 'AssistSDK'
+
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+
 end
