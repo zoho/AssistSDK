@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   # s.source_files = 'AssistScreenShareKit.framework/Headers/*.{h,m,swift}'
   s.ios.vendored_frameworks = 'SDK/AssistSDK.xcframework'
   # s.public_header_files = "SDK/AssistScreenShareKit.framework/Headers/*.h"
-  s.module_map = 'SDK/AssistSDK.framework/Modules/module.modulemap'
+  # s.module_map = 'SDK/AssistSDK.framework/Modules/module.modulemap'
   s.module_name  = 'AssistSDK'
 
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
