@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AssistSDK"
-  s.version      = "0.1.10"
+  s.version      = "0.1.11"
   s.summary      = "A screen sharing framework for Zoho Assist"
 
   # This description is used to generate tags and improve search results.
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, '8.0'
   s.ios.deployment_target = '9.0'
 
-  s.source           = {:git => "https://github.com/zoho/AssistSDK.git"}
+  s.source           = {:git => "https://github.com/zoho/AssistSDK.git", :commit => "1269f46b57803a67c75d2b983b2521a7454d86d1"}
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
   s.social_media_url = "http://zoho.com"
