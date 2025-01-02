@@ -1,0 +1,4676 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AssistSocketErrorState",
+        "printedName": "AssistSocketErrorState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "nointernet",
+            "printedName": "nointernet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO10nointernetyA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO10nointernetyA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "writeTimeoutError",
+            "printedName": "writeTimeoutError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO012writeTimeoutE0yA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO012writeTimeoutE0yA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidSSLError",
+            "printedName": "invalidSSLError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO15invalidSSLErroryA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO15invalidSSLErroryA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "compressionError",
+            "printedName": "compressionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO011compressionE0yA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO011compressionE0yA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "outputStreamWriteError",
+            "printedName": "outputStreamWriteError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO017outputStreamWriteE0yA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO017outputStreamWriteE0yA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "protocolError",
+            "printedName": "protocolError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO08protocolE0yA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO08protocolE0yA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "upgradeError",
+            "printedName": "upgradeError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO07upgradeE0yA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO07upgradeE0yA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "closeError",
+            "printedName": "closeError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO05closeE0yA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO05closeE0yA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "connectionTimeOut",
+            "printedName": "connectionTimeOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.AssistSocketErrorState.Type) -> ZAssistKit.AssistSocketErrorState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssistSocketErrorState",
+                    "printedName": "ZAssistKit.AssistSocketErrorState",
+                    "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.AssistSocketErrorState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssistSocketErrorState",
+                        "printedName": "ZAssistKit.AssistSocketErrorState",
+                        "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO17connectionTimeOutyA2CmF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO17connectionTimeOutyA2CmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AssistSocketErrorState",
+                "printedName": "ZAssistKit.AssistSocketErrorState",
+                "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AssistSocketErrorState",
+                "printedName": "ZAssistKit.AssistSocketErrorState",
+                "usr": "s:10ZAssistKit22AssistSocketErrorStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO2eeoiySbAC_ACtFZ",
+            "moduleName": "ZAssistKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO9hashValueSivp",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO9hashValueSivp",
+            "moduleName": "ZAssistKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit22AssistSocketErrorStateO9hashValueSivg",
+                "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO9hashValueSivg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit22AssistSocketErrorStateO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO4hash4intoys6HasherVz_tF",
+            "moduleName": "ZAssistKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10ZAssistKit22AssistSocketErrorStateO",
+        "mangledName": "$s10ZAssistKit22AssistSocketErrorStateO",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DisposableObserver",
+        "printedName": "DisposableObserver",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DisposableObserver",
+                "printedName": "ZAssistKit.DisposableObserver",
+                "usr": "s:10ZAssistKit18DisposableObserverC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DisposableObserver",
+                "printedName": "ZAssistKit.DisposableObserver",
+                "usr": "s:10ZAssistKit18DisposableObserverC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit18DisposableObserverC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10ZAssistKit18DisposableObserverC2eeoiySbAC_ACtFZ",
+            "moduleName": "ZAssistKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DisposableObserver",
+                "printedName": "ZAssistKit.DisposableObserver",
+                "usr": "s:10ZAssistKit18DisposableObserverC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZAssistKit18DisposableObserverC5valueACyXl_tcfc",
+            "mangledName": "$s10ZAssistKit18DisposableObserverC5valueACyXl_tcfc",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10ZAssistKit18DisposableObserverC",
+        "mangledName": "$s10ZAssistKit18DisposableObserverC",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ZAssistKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AssistSocketProtocol",
+        "printedName": "AssistSocketProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didSocketConnected",
+            "printedName": "didSocketConnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit20AssistSocketProtocolP03didD9ConnectedyyF",
+            "mangledName": "$s10ZAssistKit20AssistSocketProtocolP03didD9ConnectedyyF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.AssistSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.AssistSocketProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didSocketDisconnected",
+            "printedName": "didSocketDisconnected(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit20AssistSocketProtocolP03didD12Disconnectedyys5Error_pSgF",
+            "mangledName": "$s10ZAssistKit20AssistSocketProtocolP03didD12Disconnectedyys5Error_pSgF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.AssistSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.AssistSocketProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceive",
+            "printedName": "didReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit20AssistSocketProtocolP10didReceiveyy10Foundation4DataVF",
+            "mangledName": "$s10ZAssistKit20AssistSocketProtocolP10didReceiveyy10Foundation4DataVF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.AssistSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.AssistSocketProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceive",
+            "printedName": "didReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit20AssistSocketProtocolP10didReceiveyySSF",
+            "mangledName": "$s10ZAssistKit20AssistSocketProtocolP10didReceiveyySSF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.AssistSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.AssistSocketProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "custom_socket",
+            "printedName": "custom_socket(call_back:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZAssistKit.WebSocketProtocol?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketProtocol",
+                    "printedName": "ZAssistKit.WebSocketProtocol",
+                    "usr": "s:10ZAssistKit17WebSocketProtocolP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketCallBack",
+                "printedName": "ZAssistKit.WebSocketCallBack",
+                "usr": "s:10ZAssistKit17WebSocketCallBackP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit20AssistSocketProtocolP13custom_socket9call_backAA03WebdE0_pSgAA0jD8CallBack_p_tF",
+            "mangledName": "$s10ZAssistKit20AssistSocketProtocolP13custom_socket9call_backAA03WebdE0_pSgAA0jD8CallBack_p_tF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.AssistSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.AssistSocketProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "canReceiveData",
+            "printedName": "canReceiveData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit20AssistSocketProtocolP14canReceiveDataSbvp",
+            "mangledName": "$s10ZAssistKit20AssistSocketProtocolP14canReceiveDataSbvp",
+            "moduleName": "ZAssistKit",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit20AssistSocketProtocolP14canReceiveDataSbvg",
+                "mangledName": "$s10ZAssistKit20AssistSocketProtocolP14canReceiveDataSbvg",
+                "moduleName": "ZAssistKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.AssistSocketProtocol>",
+                "sugared_genericSig": "<Self where Self : ZAssistKit.AssistSocketProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit20AssistSocketProtocolP14canReceiveDataSbvs",
+                "mangledName": "$s10ZAssistKit20AssistSocketProtocolP14canReceiveDataSbvs",
+                "moduleName": "ZAssistKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.AssistSocketProtocol>",
+                "sugared_genericSig": "<Self where Self : ZAssistKit.AssistSocketProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit20AssistSocketProtocolP14canReceiveDataSbvM",
+                "mangledName": "$s10ZAssistKit20AssistSocketProtocolP14canReceiveDataSbvM",
+                "moduleName": "ZAssistKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.AssistSocketProtocol>",
+                "sugared_genericSig": "<Self where Self : ZAssistKit.AssistSocketProtocol>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10ZAssistKit20AssistSocketProtocolP",
+        "mangledName": "$s10ZAssistKit20AssistSocketProtocolP",
+        "moduleName": "ZAssistKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebSocketCallBack",
+        "printedName": "WebSocketCallBack",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onConnect",
+            "printedName": "onConnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketCallBackP9onConnectyyF",
+            "mangledName": "$s10ZAssistKit17WebSocketCallBackP9onConnectyyF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketCallBack>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketCallBack>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDisconnect",
+            "printedName": "onDisconnect(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketCallBackP12onDisconnect5errorys5Error_pSg_tF",
+            "mangledName": "$s10ZAssistKit17WebSocketCallBackP12onDisconnect5errorys5Error_pSg_tF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketCallBack>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketCallBack>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTextReceive",
+            "printedName": "onTextReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketCallBackP13onTextReceiveyySSF",
+            "mangledName": "$s10ZAssistKit17WebSocketCallBackP13onTextReceiveyySSF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketCallBack>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketCallBack>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDataReceive",
+            "printedName": "onDataReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketCallBackP13onDataReceiveyy10Foundation0H0VF",
+            "mangledName": "$s10ZAssistKit17WebSocketCallBackP13onDataReceiveyy10Foundation0H0VF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketCallBack>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketCallBack>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10ZAssistKit17WebSocketCallBackP",
+        "mangledName": "$s10ZAssistKit17WebSocketCallBackP",
+        "moduleName": "ZAssistKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebSocketProtocol",
+        "printedName": "WebSocketProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "disableSSLCertValidation",
+            "printedName": "disableSSLCertValidation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit17WebSocketProtocolP24disableSSLCertValidationSbvp",
+            "mangledName": "$s10ZAssistKit17WebSocketProtocolP24disableSSLCertValidationSbvp",
+            "moduleName": "ZAssistKit",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit17WebSocketProtocolP24disableSSLCertValidationSbvg",
+                "mangledName": "$s10ZAssistKit17WebSocketProtocolP24disableSSLCertValidationSbvg",
+                "moduleName": "ZAssistKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+                "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit17WebSocketProtocolP24disableSSLCertValidationSbvs",
+                "mangledName": "$s10ZAssistKit17WebSocketProtocolP24disableSSLCertValidationSbvs",
+                "moduleName": "ZAssistKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+                "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit17WebSocketProtocolP24disableSSLCertValidationSbvM",
+                "mangledName": "$s10ZAssistKit17WebSocketProtocolP24disableSSLCertValidationSbvM",
+                "moduleName": "ZAssistKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+                "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "is_connected",
+            "printedName": "is_connected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit17WebSocketProtocolP12is_connectedSbvp",
+            "mangledName": "$s10ZAssistKit17WebSocketProtocolP12is_connectedSbvp",
+            "moduleName": "ZAssistKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit17WebSocketProtocolP12is_connectedSbvg",
+                "mangledName": "$s10ZAssistKit17WebSocketProtocolP12is_connectedSbvg",
+                "moduleName": "ZAssistKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+                "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketProtocolP10disconnectyyF",
+            "mangledName": "$s10ZAssistKit17WebSocketProtocolP10disconnectyyF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketProtocolP5write4datay10Foundation4DataV_tF",
+            "mangledName": "$s10ZAssistKit17WebSocketProtocolP5write4datay10Foundation4DataV_tF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketProtocolP5write6stringySS_tF",
+            "mangledName": "$s10ZAssistKit17WebSocketProtocolP5write6stringySS_tF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(websocket:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZAssistKit.WebSocketCallBack?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketCallBack",
+                    "printedName": "ZAssistKit.WebSocketCallBack",
+                    "usr": "s:10ZAssistKit17WebSocketCallBackP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketProtocolP7connect9websocket8delegatey10Foundation10URLRequestV_AA0cD8CallBack_pSgtF",
+            "mangledName": "$s10ZAssistKit17WebSocketProtocolP7connect9websocket8delegatey10Foundation10URLRequestV_AA0cD8CallBack_pSgtF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "lostNetwork",
+            "printedName": "lostNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit17WebSocketProtocolP11lostNetworkyyF",
+            "mangledName": "$s10ZAssistKit17WebSocketProtocolP11lostNetworkyyF",
+            "moduleName": "ZAssistKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZAssistKit.WebSocketProtocol>",
+            "sugared_genericSig": "<Self where Self : ZAssistKit.WebSocketProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10ZAssistKit17WebSocketProtocolP",
+        "mangledName": "$s10ZAssistKit17WebSocketProtocolP",
+        "moduleName": "ZAssistKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZAssistKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ReachabilityError",
+        "printedName": "ReachabilityError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "failedToCreateWithAddress",
+            "printedName": "failedToCreateWithAddress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.ReachabilityError.Type) -> (Darwin.sockaddr, Swift.Int32) -> ZAssistKit.ReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Darwin.sockaddr, Swift.Int32) -> ZAssistKit.ReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Darwin.sockaddr, Swift.Int32)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "sockaddr",
+                            "printedName": "Darwin.sockaddr",
+                            "usr": "c:@S@sockaddr"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int32",
+                            "printedName": "Swift.Int32",
+                            "usr": "s:s5Int32V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.ReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit17ReachabilityErrorO25failedToCreateWithAddressyACSo8sockaddrV_s5Int32VtcACmF",
+            "mangledName": "$s10ZAssistKit17ReachabilityErrorO25failedToCreateWithAddressyACSo8sockaddrV_s5Int32VtcACmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "failedToCreateWithHostname",
+            "printedName": "failedToCreateWithHostname",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.ReachabilityError.Type) -> (Swift.String, Swift.Int32) -> ZAssistKit.ReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.Int32) -> ZAssistKit.ReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.Int32)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int32",
+                            "printedName": "Swift.Int32",
+                            "usr": "s:s5Int32V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.ReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit17ReachabilityErrorO26failedToCreateWithHostnameyACSS_s5Int32VtcACmF",
+            "mangledName": "$s10ZAssistKit17ReachabilityErrorO26failedToCreateWithHostnameyACSS_s5Int32VtcACmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToSetCallback",
+            "printedName": "unableToSetCallback",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.ReachabilityError.Type) -> (Swift.Int32) -> ZAssistKit.ReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int32) -> ZAssistKit.ReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.ReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit17ReachabilityErrorO19unableToSetCallbackyACs5Int32VcACmF",
+            "mangledName": "$s10ZAssistKit17ReachabilityErrorO19unableToSetCallbackyACs5Int32VcACmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToSetDispatchQueue",
+            "printedName": "unableToSetDispatchQueue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.ReachabilityError.Type) -> (Swift.Int32) -> ZAssistKit.ReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int32) -> ZAssistKit.ReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.ReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit17ReachabilityErrorO24unableToSetDispatchQueueyACs5Int32VcACmF",
+            "mangledName": "$s10ZAssistKit17ReachabilityErrorO24unableToSetDispatchQueueyACs5Int32VcACmF",
+            "moduleName": "ZAssistKit"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToGetFlags",
+            "printedName": "unableToGetFlags",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZAssistKit.ReachabilityError.Type) -> (Swift.Int32) -> ZAssistKit.ReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int32) -> ZAssistKit.ReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZAssistKit.ReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReachabilityError",
+                        "printedName": "ZAssistKit.ReachabilityError",
+                        "usr": "s:10ZAssistKit17ReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZAssistKit17ReachabilityErrorO16unableToGetFlagsyACs5Int32VcACmF",
+            "mangledName": "$s10ZAssistKit17ReachabilityErrorO16unableToGetFlagsyACs5Int32VcACmF",
+            "moduleName": "ZAssistKit"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10ZAssistKit17ReachabilityErrorO",
+        "mangledName": "$s10ZAssistKit17ReachabilityErrorO",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZReachability",
+        "printedName": "ZReachability",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Connection",
+            "printedName": "Connection",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "unavailable",
+                "printedName": "unavailable",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZAssistKit.ZReachability.Connection.Type) -> ZAssistKit.ZReachability.Connection",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Connection",
+                        "printedName": "ZAssistKit.ZReachability.Connection",
+                        "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ZAssistKit.ZReachability.Connection.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Connection",
+                            "printedName": "ZAssistKit.ZReachability.Connection",
+                            "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO11unavailableyA2EmF",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO11unavailableyA2EmF",
+                "moduleName": "ZAssistKit"
+              },
+              {
+                "kind": "Var",
+                "name": "wifi",
+                "printedName": "wifi",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZAssistKit.ZReachability.Connection.Type) -> ZAssistKit.ZReachability.Connection",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Connection",
+                        "printedName": "ZAssistKit.ZReachability.Connection",
+                        "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ZAssistKit.ZReachability.Connection.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Connection",
+                            "printedName": "ZAssistKit.ZReachability.Connection",
+                            "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO4wifiyA2EmF",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO4wifiyA2EmF",
+                "moduleName": "ZAssistKit"
+              },
+              {
+                "kind": "Var",
+                "name": "cellular",
+                "printedName": "cellular",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZAssistKit.ZReachability.Connection.Type) -> ZAssistKit.ZReachability.Connection",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Connection",
+                        "printedName": "ZAssistKit.ZReachability.Connection",
+                        "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ZAssistKit.ZReachability.Connection.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Connection",
+                            "printedName": "ZAssistKit.ZReachability.Connection",
+                            "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO8cellularyA2EmF",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO8cellularyA2EmF",
+                "moduleName": "ZAssistKit"
+              },
+              {
+                "kind": "Var",
+                "name": "description",
+                "printedName": "description",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO11descriptionSSvp",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO11descriptionSSvp",
+                "moduleName": "ZAssistKit",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO11descriptionSSvg",
+                    "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO11descriptionSSvg",
+                    "moduleName": "ZAssistKit",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "none",
+                "printedName": "none",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Connection",
+                    "printedName": "ZAssistKit.ZReachability.Connection",
+                    "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO4noneAEvpZ",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO4noneAEvpZ",
+                "moduleName": "ZAssistKit",
+                "static": true,
+                "deprecated": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "Available"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Connection",
+                        "printedName": "ZAssistKit.ZReachability.Connection",
+                        "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO4noneAEvgZ",
+                    "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO4noneAEvgZ",
+                    "moduleName": "ZAssistKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Connection",
+                    "printedName": "ZAssistKit.ZReachability.Connection",
+                    "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Connection",
+                    "printedName": "ZAssistKit.ZReachability.Connection",
+                    "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO2eeoiySbAE_AEtFZ",
+                "moduleName": "ZAssistKit",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO9hashValueSivp",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO9hashValueSivp",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO9hashValueSivg",
+                    "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO9hashValueSivg",
+                    "moduleName": "ZAssistKit",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO4hash4intoys6HasherVz_tF",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC10ConnectionO",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whenReachable",
+            "printedName": "whenReachable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((ZAssistKit.ZReachability) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZAssistKit.ZReachability) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZReachability",
+                        "printedName": "ZAssistKit.ZReachability",
+                        "usr": "s:10ZAssistKit13ZReachabilityC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC13whenReachableyACcSgvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC13whenReachableyACcSgvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ZAssistKit.ZReachability) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ZAssistKit.ZReachability) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ZReachability",
+                            "printedName": "ZAssistKit.ZReachability",
+                            "usr": "s:10ZAssistKit13ZReachabilityC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC13whenReachableyACcSgvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC13whenReachableyACcSgvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ZAssistKit.ZReachability) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ZAssistKit.ZReachability) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ZReachability",
+                            "printedName": "ZAssistKit.ZReachability",
+                            "usr": "s:10ZAssistKit13ZReachabilityC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC13whenReachableyACcSgvs",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC13whenReachableyACcSgvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC13whenReachableyACcSgvM",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC13whenReachableyACcSgvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whenUnreachable",
+            "printedName": "whenUnreachable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((ZAssistKit.ZReachability) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZAssistKit.ZReachability) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZReachability",
+                        "printedName": "ZAssistKit.ZReachability",
+                        "usr": "s:10ZAssistKit13ZReachabilityC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC15whenUnreachableyACcSgvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC15whenUnreachableyACcSgvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ZAssistKit.ZReachability) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ZAssistKit.ZReachability) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ZReachability",
+                            "printedName": "ZAssistKit.ZReachability",
+                            "usr": "s:10ZAssistKit13ZReachabilityC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC15whenUnreachableyACcSgvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC15whenUnreachableyACcSgvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ZAssistKit.ZReachability) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ZAssistKit.ZReachability) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ZReachability",
+                            "printedName": "ZAssistKit.ZReachability",
+                            "usr": "s:10ZAssistKit13ZReachabilityC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC15whenUnreachableyACcSgvs",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC15whenUnreachableyACcSgvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC15whenUnreachableyACcSgvM",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC15whenUnreachableyACcSgvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reachableOnWWAN",
+            "printedName": "reachableOnWWAN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC15reachableOnWWANSbvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC15reachableOnWWANSbvp",
+            "moduleName": "ZAssistKit",
+            "deprecated": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "Available"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC15reachableOnWWANSbvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC15reachableOnWWANSbvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allowsCellularConnection",
+            "printedName": "allowsCellularConnection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC24allowsCellularConnectionSbvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC24allowsCellularConnectionSbvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC24allowsCellularConnectionSbvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC24allowsCellularConnectionSbvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC24allowsCellularConnectionSbvs",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC24allowsCellularConnectionSbvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC24allowsCellularConnectionSbvM",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC24allowsCellularConnectionSbvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notificationCenter",
+            "printedName": "notificationCenter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NotificationCenter",
+                "printedName": "Foundation.NotificationCenter",
+                "usr": "c:objc(cs)NSNotificationCenter"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC18notificationCenterSo014NSNotificationE0Cvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC18notificationCenterSo014NSNotificationE0Cvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NotificationCenter",
+                    "printedName": "Foundation.NotificationCenter",
+                    "usr": "c:objc(cs)NSNotificationCenter"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC18notificationCenterSo014NSNotificationE0Cvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC18notificationCenterSo014NSNotificationE0Cvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NotificationCenter",
+                    "printedName": "Foundation.NotificationCenter",
+                    "usr": "c:objc(cs)NSNotificationCenter"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC18notificationCenterSo014NSNotificationE0Cvs",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC18notificationCenterSo014NSNotificationE0Cvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC18notificationCenterSo014NSNotificationE0CvM",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC18notificationCenterSo014NSNotificationE0CvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentReachabilityString",
+            "printedName": "currentReachabilityString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC25currentReachabilityStringSSvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC25currentReachabilityStringSSvp",
+            "moduleName": "ZAssistKit",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC25currentReachabilityStringSSvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC25currentReachabilityStringSSvg",
+                "moduleName": "ZAssistKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connection",
+            "printedName": "connection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Connection",
+                "printedName": "ZAssistKit.ZReachability.Connection",
+                "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC10connectionAC10ConnectionOvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC10connectionAC10ConnectionOvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Connection",
+                    "printedName": "ZAssistKit.ZReachability.Connection",
+                    "usr": "s:10ZAssistKit13ZReachabilityC10ConnectionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC10connectionAC10ConnectionOvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC10connectionAC10ConnectionOvg",
+                "moduleName": "ZAssistKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(reachabilityRef:queueQoS:targetQueue:notificationQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZReachability",
+                "printedName": "ZAssistKit.ZReachability",
+                "usr": "s:10ZAssistKit13ZReachabilityC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SCNetworkReachability",
+                "printedName": "SystemConfiguration.SCNetworkReachability",
+                "usr": "c:@T@SCNetworkReachabilityRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQoS",
+                "printedName": "Dispatch.DispatchQoS",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A3QoSV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZAssistKit13ZReachabilityC15reachabilityRef8queueQoS11targetQueue012notificationI0ACSo021SCNetworkReachabilityE0a_8Dispatch0mG1SVSo012OS_dispatch_F0CSgAOtcfc",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC15reachabilityRef8queueQoS11targetQueue012notificationI0ACSo021SCNetworkReachabilityE0a_8Dispatch0mG1SVSo012OS_dispatch_F0CSgAOtcfc",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hostname:queueQoS:targetQueue:notificationQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZReachability",
+                "printedName": "ZAssistKit.ZReachability",
+                "usr": "s:10ZAssistKit13ZReachabilityC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQoS",
+                "printedName": "Dispatch.DispatchQoS",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A3QoSV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZAssistKit13ZReachabilityC8hostname8queueQoS11targetQueue012notificationH0ACSS_8Dispatch0jF1SVSo012OS_dispatch_E0CSgAMtKcfc",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC8hostname8queueQoS11targetQueue012notificationH0ACSS_8Dispatch0jF1SVSo012OS_dispatch_E0CSgAMtKcfc",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(queueQoS:targetQueue:notificationQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZReachability",
+                "printedName": "ZAssistKit.ZReachability",
+                "usr": "s:10ZAssistKit13ZReachabilityC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQoS",
+                "printedName": "Dispatch.DispatchQoS",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A3QoSV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZAssistKit13ZReachabilityC8queueQoS11targetQueue012notificationG0AC8Dispatch0iE1SV_So012OS_dispatch_D0CSgALtKcfc",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC8queueQoS11targetQueue012notificationG0AC8Dispatch0iE1SV_So012OS_dispatch_D0CSgALtKcfc",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "startNotifier",
+            "printedName": "startNotifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13ZReachabilityC13startNotifieryyKF",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC13startNotifieryyKF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopNotifier",
+            "printedName": "stopNotifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13ZReachabilityC12stopNotifieryyF",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC12stopNotifieryyF",
+            "moduleName": "ZAssistKit",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isReachable",
+            "printedName": "isReachable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC11isReachableSbvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC11isReachableSbvp",
+            "moduleName": "ZAssistKit",
+            "deprecated": true,
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC11isReachableSbvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC11isReachableSbvg",
+                "moduleName": "ZAssistKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isReachableViaWWAN",
+            "printedName": "isReachableViaWWAN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC18isReachableViaWWANSbvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC18isReachableViaWWANSbvp",
+            "moduleName": "ZAssistKit",
+            "deprecated": true,
+            "declAttributes": [
+              "Available"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC18isReachableViaWWANSbvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC18isReachableViaWWANSbvg",
+                "moduleName": "ZAssistKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isReachableViaWiFi",
+            "printedName": "isReachableViaWiFi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC18isReachableViaWiFiSbvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC18isReachableViaWiFiSbvp",
+            "moduleName": "ZAssistKit",
+            "deprecated": true,
+            "declAttributes": [
+              "Available"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC18isReachableViaWiFiSbvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC18isReachableViaWiFiSbvg",
+                "moduleName": "ZAssistKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13ZReachabilityC11descriptionSSvp",
+            "mangledName": "$s10ZAssistKit13ZReachabilityC11descriptionSSvp",
+            "moduleName": "ZAssistKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13ZReachabilityC11descriptionSSvg",
+                "mangledName": "$s10ZAssistKit13ZReachabilityC11descriptionSSvg",
+                "moduleName": "ZAssistKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10ZAssistKit13ZReachabilityC",
+        "mangledName": "$s10ZAssistKit13ZReachabilityC",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SocketHandler",
+        "printedName": "SocketHandler",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "socket",
+            "printedName": "socket",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZAssistKit.WebSocketProtocol?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketProtocol",
+                    "printedName": "ZAssistKit.WebSocketProtocol",
+                    "usr": "s:10ZAssistKit17WebSocketProtocolP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13SocketHandlerC6socketAA03WebC8Protocol_pSgvp",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC6socketAA03WebC8Protocol_pSgvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZAssistKit.WebSocketProtocol?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketProtocol",
+                        "printedName": "ZAssistKit.WebSocketProtocol",
+                        "usr": "s:10ZAssistKit17WebSocketProtocolP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC6socketAA03WebC8Protocol_pSgvg",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC6socketAA03WebC8Protocol_pSgvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZAssistKit.WebSocketProtocol?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketProtocol",
+                        "printedName": "ZAssistKit.WebSocketProtocol",
+                        "usr": "s:10ZAssistKit17WebSocketProtocolP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC6socketAA03WebC8Protocol_pSgvs",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC6socketAA03WebC8Protocol_pSgvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC6socketAA03WebC8Protocol_pSgvM",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC6socketAA03WebC8Protocol_pSgvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeOut",
+            "printedName": "timeOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13SocketHandlerC7timeOutSdvp",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC7timeOutSdvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC7timeOutSdvg",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC7timeOutSdvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC7timeOutSdvs",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC7timeOutSdvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC7timeOutSdvM",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC7timeOutSdvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reachability",
+            "printedName": "reachability",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZAssistKit.ZReachability?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZReachability",
+                    "printedName": "ZAssistKit.ZReachability",
+                    "usr": "s:10ZAssistKit13ZReachabilityC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13SocketHandlerC12reachabilityAA13ZReachabilityCSgvp",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC12reachabilityAA13ZReachabilityCSgvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZAssistKit.ZReachability?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZReachability",
+                        "printedName": "ZAssistKit.ZReachability",
+                        "usr": "s:10ZAssistKit13ZReachabilityC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC12reachabilityAA13ZReachabilityCSgvg",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC12reachabilityAA13ZReachabilityCSgvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZAssistKit.ZReachability?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZReachability",
+                        "printedName": "ZAssistKit.ZReachability",
+                        "usr": "s:10ZAssistKit13ZReachabilityC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC12reachabilityAA13ZReachabilityCSgvs",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC12reachabilityAA13ZReachabilityCSgvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC12reachabilityAA13ZReachabilityCSgvM",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC12reachabilityAA13ZReachabilityCSgvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gateWayUrlRequest",
+            "printedName": "gateWayUrlRequest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.URLRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13SocketHandlerC17gateWayUrlRequest10Foundation10URLRequestVSgvp",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC17gateWayUrlRequest10Foundation10URLRequestVSgvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Foundation.URLRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC17gateWayUrlRequest10Foundation10URLRequestVSgvg",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC17gateWayUrlRequest10Foundation10URLRequestVSgvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Foundation.URLRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC17gateWayUrlRequest10Foundation10URLRequestVSgvs",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC17gateWayUrlRequest10Foundation10URLRequestVSgvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC17gateWayUrlRequest10Foundation10URLRequestVSgvM",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC17gateWayUrlRequest10Foundation10URLRequestVSgvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "writeQoS",
+            "printedName": "writeQoS",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QualityOfService",
+                "printedName": "Foundation.QualityOfService",
+                "usr": "c:@E@NSQualityOfService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13SocketHandlerC8writeQoSSo18NSQualityOfServiceVvp",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC8writeQoSSo18NSQualityOfServiceVvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualityOfService",
+                    "printedName": "Foundation.QualityOfService",
+                    "usr": "c:@E@NSQualityOfService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC8writeQoSSo18NSQualityOfServiceVvg",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC8writeQoSSo18NSQualityOfServiceVvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "readQoS",
+            "printedName": "readQoS",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QualityOfService",
+                "printedName": "Foundation.QualityOfService",
+                "usr": "c:@E@NSQualityOfService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13SocketHandlerC7readQoSSo18NSQualityOfServiceVvp",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC7readQoSSo18NSQualityOfServiceVvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualityOfService",
+                    "printedName": "Foundation.QualityOfService",
+                    "usr": "c:@E@NSQualityOfService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC7readQoSSo18NSQualityOfServiceVvg",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC7readQoSSo18NSQualityOfServiceVvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:writeQoS:readQoS:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SocketHandler",
+                "printedName": "ZAssistKit.SocketHandler",
+                "usr": "s:10ZAssistKit13SocketHandlerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QualityOfService",
+                "printedName": "Foundation.QualityOfService",
+                "usr": "c:@E@NSQualityOfService"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QualityOfService",
+                "printedName": "Foundation.QualityOfService",
+                "usr": "c:@E@NSQualityOfService"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZAssistKit13SocketHandlerC_8writeQoS04readF1SAC10Foundation10URLRequestV_So18NSQualityOfServiceVAJtcfc",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC_8writeQoS04readF1SAC10Foundation10URLRequestV_So18NSQualityOfServiceVAJtcfc",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "disableSSLCertValidation",
+            "printedName": "disableSSLCertValidation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13SocketHandlerC24disableSSLCertValidationSbvp",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC24disableSSLCertValidationSbvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC24disableSSLCertValidationSbvg",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC24disableSSLCertValidationSbvg",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC24disableSSLCertValidationSbvs",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC24disableSSLCertValidationSbvs",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC24disableSSLCertValidationSbvM",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC24disableSSLCertValidationSbvM",
+                "moduleName": "ZAssistKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isConnected",
+            "printedName": "isConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZAssistKit13SocketHandlerC11isConnectedSbvp",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC11isConnectedSbvp",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZAssistKit13SocketHandlerC11isConnectedSbvg",
+                "mangledName": "$s10ZAssistKit13SocketHandlerC11isConnectedSbvg",
+                "moduleName": "ZAssistKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC5startyyF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC5startyyF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addListerner",
+            "printedName": "addListerner(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DisposableObserver",
+                "printedName": "ZAssistKit.DisposableObserver",
+                "usr": "s:10ZAssistKit18DisposableObserverC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AssistSocketProtocol",
+                "printedName": "ZAssistKit.AssistSocketProtocol",
+                "usr": "s:10ZAssistKit20AssistSocketProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC12addListerneryAA18DisposableObserverCAA06AssistC8Protocol_pF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC12addListerneryAA18DisposableObserverCAA06AssistC8Protocol_pF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeListerner",
+            "printedName": "removeListerner(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DisposableObserver",
+                "printedName": "ZAssistKit.DisposableObserver",
+                "usr": "s:10ZAssistKit18DisposableObserverC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC15removeListerneryyAA18DisposableObserverCF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC15removeListerneryyAA18DisposableObserverCF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC5resetyyF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC5resetyyF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC5writeyySSSgF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC5writeyySSSgF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC5writeyy10Foundation4DataVSgF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC5writeyy10Foundation4DataVSgF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC10disconnectyyF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC10disconnectyyF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onConnect",
+            "printedName": "onConnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC9onConnectyyF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC9onConnectyyF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDisconnect",
+            "printedName": "onDisconnect(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC12onDisconnect5errorys5Error_pSg_tF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC12onDisconnect5errorys5Error_pSg_tF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTextReceive",
+            "printedName": "onTextReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC13onTextReceiveyySSF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC13onTextReceiveyySSF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDataReceive",
+            "printedName": "onDataReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZAssistKit13SocketHandlerC13onDataReceiveyy10Foundation0F0VF",
+            "mangledName": "$s10ZAssistKit13SocketHandlerC13onDataReceiveyy10Foundation0F0VF",
+            "moduleName": "ZAssistKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10ZAssistKit13SocketHandlerC",
+        "mangledName": "$s10ZAssistKit13SocketHandlerC",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "WebSocketCallBack",
+            "printedName": "WebSocketCallBack",
+            "usr": "s:10ZAssistKit17WebSocketCallBackP",
+            "mangledName": "$s10ZAssistKit17WebSocketCallBackP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZAssistKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Name",
+        "printedName": "Name",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reachabilityChanged",
+            "printedName": "reachabilityChanged",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea10ZAssistKitE19reachabilityChangedABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea10ZAssistKitE19reachabilityChangedABvpZ",
+            "moduleName": "ZAssistKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea10ZAssistKitE19reachabilityChangedABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea10ZAssistKitE19reachabilityChangedABvgZ",
+                "moduleName": "ZAssistKit",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "c:@T@NSNotificationName",
+        "moduleName": "Foundation",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "Sendable"
+        ],
+        "isFromExtension": true,
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_SwiftNewtypeWrapper",
+            "printedName": "_SwiftNewtypeWrapper",
+            "usr": "s:s20_SwiftNewtypeWrapperP",
+            "mangledName": "$ss20_SwiftNewtypeWrapperP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 1741,
+      "length": 33,
+      "value": "\"ReachabilityChangedNotification\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 1869,
+      "length": 21,
+      "value": "\"reachabilityChanged\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2335,
+      "length": 10,
+      "value": "\"Cellular\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2389,
+      "length": 6,
+      "value": "\"WiFi\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2435,
+      "length": 15,
+      "value": "\"No Connection\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2679,
+      "length": 10,
+      "value": "\"Cellular\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2721,
+      "length": 6,
+      "value": "\"WiFi\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2766,
+      "length": 15,
+      "value": "\"No Connection\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3145,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 3616,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 3630,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4276,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4348,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5008,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 5120,
+      "length": 32,
+      "value": "\"uk.co.ashleymills.reachability\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7630,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 8637,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9230,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9302,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 10116,
+      "length": 19,
+      "value": "\"unavailable flags\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13120,
+      "length": 3,
+      "value": "\"W\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13126,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13167,
+      "length": 3,
+      "value": "\"R\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13173,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13223,
+      "length": 3,
+      "value": "\"c\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13229,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13280,
+      "length": 3,
+      "value": "\"t\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13286,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13338,
+      "length": 3,
+      "value": "\"i\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13344,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13395,
+      "length": 3,
+      "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13401,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13451,
+      "length": 3,
+      "value": "\"D\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13457,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13501,
+      "length": 3,
+      "value": "\"l\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13507,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13545,
+      "length": 3,
+      "value": "\"d\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13551,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13571,
+      "length": 39,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13576,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13580,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13585,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13589,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13593,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13597,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13601,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13605,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 13609,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 597,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1679,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1858,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3967,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5323,
+      "length": 39,
+      "value": "\"gateway ::: \""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5361,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5675,
+      "length": 42,
+      "value": "\"socket handler \""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5713,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5716,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 6614,
+      "length": 106,
+      "value": "\"ASK :::Disconnect callback triggred \""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 6662,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 6719,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "FloatLiteral",
+      "offset": 9117,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9201,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9418,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9693,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 390,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 507,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 859,
+      "length": 16,
+      "value": "\"Queue_13_above\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 184,
+      "length": 22,
+      "value": "\"ZAssistKit.URLSessionCustomSocket\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 2047,
+      "length": 19,
+      "value": "\"Write Error: Data\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3667,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 3714,
+      "length": 12,
+      "value": "\"read again\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 4080,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 4429,
+      "length": 14,
+      "value": "\"Socket error\""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4481,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4813,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5777,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 6049,
+      "length": 25,
+      "value": "\"⚪️SOCKET ERROR🔴 \""
+    },
+    {
+      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7215,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

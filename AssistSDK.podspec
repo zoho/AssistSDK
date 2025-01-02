@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
   s.social_media_url = "http://zoho.com"
   # s.source_files = 'AssistScreenShareKit.framework/Headers/*.{h,m,swift}'
-  s.ios.vendored_frameworks = 'SDK/AssistSDK.xcframework'
+  s.ios.vendored_frameworks = 'SDK/*.framework'
   # s.public_header_files = "SDK/AssistScreenShareKit.framework/Headers/*.h"
   # s.module_map = 'SDK/AssistSDK.framework/Modules/module.modulemap'
   s.module_name  = 'AssistSDK'

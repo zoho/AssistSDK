@@ -1,0 +1,167 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ZAssistKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import SystemConfiguration
+import UIKit
+@_exported import ZAssistKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum AssistSocketErrorState : Swift.Error {
+  case nointernet, writeTimeoutError, invalidSSLError, compressionError, outputStreamWriteError, protocolError, upgradeError, closeError, connectionTimeOut
+  public static func == (a: ZAssistKit.AssistSocketErrorState, b: ZAssistKit.AssistSocketErrorState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class DisposableObserver : Swift.Equatable {
+  public static func == (lhs: ZAssistKit.DisposableObserver, rhs: ZAssistKit.DisposableObserver) -> Swift.Bool
+  public init(value: Swift.AnyObject)
+  @objc deinit
+}
+public protocol AssistSocketProtocol : AnyObject {
+  func didSocketConnected()
+  func didSocketDisconnected(_ error: (any Swift.Error)?)
+  func didReceive(_ data: Foundation.Data)
+  func didReceive(_ string: Swift.String)
+  func custom_socket(call_back listerner: any ZAssistKit.WebSocketCallBack) -> (any ZAssistKit.WebSocketProtocol)?
+  var canReceiveData: Swift.Bool { get set }
+}
+public protocol WebSocketCallBack : AnyObject {
+  func onConnect()
+  func onDisconnect(error: (any Swift.Error)?)
+  func onTextReceive(_ text: Swift.String)
+  func onDataReceive(_ data: Foundation.Data)
+}
+public protocol WebSocketProtocol : AnyObject {
+  var disableSSLCertValidation: Swift.Bool { get set }
+  var is_connected: Swift.Bool { get }
+  func disconnect()
+  func write(data: Foundation.Data)
+  func write(string: Swift.String)
+  func connect(websocket url: Foundation.URLRequest, delegate: (any ZAssistKit.WebSocketCallBack)?)
+  func lostNetwork()
+}
+public enum ReachabilityError : Swift.Error {
+  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
+  case failedToCreateWithHostname(Swift.String, Swift.Int32)
+  case unableToSetCallback(Swift.Int32)
+  case unableToSetDispatchQueue(Swift.Int32)
+  case unableToGetFlags(Swift.Int32)
+}
+@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
+public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+extension Foundation.NSNotification.Name {
+  public static let reachabilityChanged: Foundation.Notification.Name
+}
+public class ZReachability {
+  public typealias NetworkReachable = (ZAssistKit.ZReachability) -> ()
+  public typealias NetworkUnreachable = (ZAssistKit.ZReachability) -> ()
+  @available(*, unavailable, renamed: "Connection")
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: ZAssistKit.ZReachability.NetworkStatus, b: ZAssistKit.ZReachability.NetworkStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Connection : Swift.CustomStringConvertible {
+    case unavailable, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    @available(*, deprecated, renamed: "unavailable")
+    public static let none: ZAssistKit.ZReachability.Connection
+    public static func == (a: ZAssistKit.ZReachability.Connection, b: ZAssistKit.ZReachability.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: ZAssistKit.ZReachability.NetworkReachable?
+  public var whenUnreachable: ZAssistKit.ZReachability.NetworkUnreachable?
+  @available(*, deprecated, renamed: "allowsCellularConnection")
+  final public let reachableOnWWAN: Swift.Bool
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  @available(*, deprecated, renamed: "connection.description")
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  @available(*, unavailable, renamed: "connection")
+  public var currentReachabilityStatus: ZAssistKit.ZReachability.Connection {
+    get
+  }
+  public var connection: ZAssistKit.ZReachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  @objc deinit
+}
+extension ZAssistKit.ZReachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  @available(*, deprecated, message: "Please use `connection != .none`")
+  public var isReachable: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .cellular`")
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .wifi`")
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+public class SocketHandler {
+  public var socket: (any ZAssistKit.WebSocketProtocol)?
+  public var timeOut: Swift.Double
+  public var reachability: ZAssistKit.ZReachability?
+  public var gateWayUrlRequest: Foundation.URLRequest!
+  final public let writeQoS: Foundation.QualityOfService
+  final public let readQoS: Foundation.QualityOfService
+  public init(_ url: Foundation.URLRequest, writeQoS: Foundation.QualityOfService, readQoS: Foundation.QualityOfService)
+  public var disableSSLCertValidation: Swift.Bool {
+    get
+    set
+  }
+  public var isConnected: Swift.Bool {
+    get
+  }
+  public func start()
+  public func addListerner(_ object: any ZAssistKit.AssistSocketProtocol) -> ZAssistKit.DisposableObserver
+  public func removeListerner(_ object: ZAssistKit.DisposableObserver)
+  public func reset()
+  public func write(_ string: Swift.String?)
+  public func write(_ data: Foundation.Data?)
+  public func disconnect()
+  @objc deinit
+}
+extension ZAssistKit.SocketHandler : ZAssistKit.WebSocketCallBack {
+  public func onConnect()
+  public func onDisconnect(error: (any Swift.Error)?)
+  public func onTextReceive(_ text: Swift.String)
+  public func onDataReceive(_ data: Foundation.Data)
+}
+extension ZAssistKit.AssistSocketErrorState : Swift.Equatable {}
+extension ZAssistKit.AssistSocketErrorState : Swift.Hashable {}
+@available(*, unavailable, renamed: "Connection")
+extension ZAssistKit.ZReachability.NetworkStatus : Swift.Equatable {}
+@available(*, unavailable, renamed: "Connection")
+extension ZAssistKit.ZReachability.NetworkStatus : Swift.Hashable {}
+extension ZAssistKit.ZReachability.Connection : Swift.Equatable {}
+extension ZAssistKit.ZReachability.Connection : Swift.Hashable {}

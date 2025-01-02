@@ -1,0 +1,798 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AssistSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Accelerate
+@_exported import AssistSDK
+import CoreFoundation
+import CoreGraphics
+import CoreMedia
+import Foundation
+import ImageIO
+import Photos
+import ReplayKit.RPBroadcast
+import ReplayKit
+import Swift
+import UIKit
+import VideoToolbox
+import ZAUtils
+import ZAssistKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Foundation.CharacterSet {
+  public static let urlQueryAllowedExcludePlusSign: Foundation.CharacterSet
+}
+public func printLog(string: Swift.String..., file: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+public enum AgentOSType {
+  case windows, mac, mobile, linux
+  public static func == (a: AssistSDK.AgentOSType, b: AssistSDK.AgentOSType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SessionValidation {
+  case success, continueSession
+  case failure((any Swift.Error)?)
+  public enum FailureState : Swift.Error {
+    case paramMissing, invalidKey, sessionKeyExpired, authenticationFailed, featureNotAvailable, notAllowed, internalError, invalidLicenseKey, restartExtension, noInternet
+    case duplicateBroadcast
+    public static func == (a: AssistSDK.SessionValidation.FailureState, b: AssistSDK.SessionValidation.FailureState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum AssistInitState {
+  case success(features: [AssistSDK.AssistFeatures], clientID: Swift.String?)
+  case failure(AssistSDK.AssistInitState.DisconnectState)
+  public enum DisconnectState : Swift.Error {
+    case serviceDown
+    case switchServer(gateway: Swift.String, port: Swift.Int)
+  }
+}
+public enum AssistRequestErrorResponse : Swift.Error {
+  case featureNotAvailable, agentNotAvailable, socketDisconnected, customerStoppedSharing, session
+  public static func == (a: AssistSDK.AssistRequestErrorResponse, b: AssistSDK.AssistRequestErrorResponse) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum RoleChangeStatus {
+  case turnToAgent
+  case failure(AssistSDK.RoleChangeStatus.RoleChangeError)
+  public enum RoleChangeError {
+    case gatewayRejected, customerRecjected, timeOut
+    public static func == (a: AssistSDK.RoleChangeStatus.RoleChangeError, b: AssistSDK.RoleChangeStatus.RoleChangeError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum FeatureConfigurationMode : Swift.Int {
+  case notAvailable
+  case disable
+  case enable
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum Feature {
+  case noavailable, disabled, enabled
+  public static func == (a: AssistSDK.Feature, b: AssistSDK.Feature) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ClipBoardSharing : Swift.Int {
+  case disabled
+  case disabledAgentToViewer
+  case disabledViewerToAgent
+  case allowInBothEnds
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum UserConcern : Swift.String {
+  case deny, allow
+  public var response: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SummaryAPIError : Swift.Error {
+  case UnknownError(Swift.String?)
+  case DecodingError(Swift.String)
+  case NoInternet
+  case AuthenticationFailed
+}
+public enum SessionOwnerAPIError : Swift.Error {
+  case APIError(Swift.String?)
+  case DecodingError(Swift.String)
+}
+public enum NetworkError : Swift.Error {
+  case NoInternet
+  case UnknownError(Swift.String?)
+}
+public enum APIErrorType {
+  case invalidDigest
+  case maxURSLimitReached
+  case freeUserLimitation
+  case licenseLimitation
+  case unknown
+  public static func == (a: AssistSDK.APIErrorType, b: AssistSDK.APIErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct APIErrorResponse : Swift.Codable, Swift.Error {
+  public var code: Swift.Int? {
+    get
+  }
+  public var message: Swift.String? {
+    get
+  }
+  public var parameter_name: Swift.String? {
+    get
+  }
+  public var errorType: AssistSDK.APIErrorType {
+    get
+  }
+  public var errorDesc: Swift.String {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum FreeSessionEndState {
+  case none, local_timer, gw_command, session_count_limit_exceded
+  public static func == (a: AssistSDK.FreeSessionEndState, b: AssistSDK.FreeSessionEndState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class AssistSampleHandler : ReplayKit.RPBroadcastSampleHandler, AssistSDK.AssistScreenShareProtocol, AssistSDK.AssistFeaturesProtocol {
+  open var is_video_streaming_enabled: Swift.Bool {
+    get
+  }
+  open var appGroup: Swift.String!
+  open var is_stopped: Swift.Bool {
+    get
+    set
+  }
+  open var is_connected: Swift.Bool
+  open func didConnectSocket()
+  open func didSocket(disconnected state: AssistSDK.SocketDisconnectStatus)
+  open func didSessionConnected()
+  open func didChangeImage(quality: AssistSDK.ScreenQuality)
+  open func didChanage(participant: AssistSDK.Participant)
+  open func didReceived(chat: AssistSDK.Chat)
+  open func onFeaturesReceived(_ features: Foundation.NSArray)
+  open var assist_screenshare_obj: AssistSDK.AssistScreenShare?
+  open func waitingForCustomerConcern(completion: @escaping (Swift.Bool) -> ())
+  open func featuresReceived(fwdFeaturesList: AssistSDK.FwdFeatureList)
+  open func userConcernRequestReceived(request: AssistSDK.UserConsentRequest, completion: @escaping (AssistSDK.UserConsentResponse) -> ())
+  open func sessionRestricted(state: AssistSDK.FreeSessionEndState)
+  @objc override dynamic open func broadcastStarted(withSetupInfo setupInfo: [Swift.String : ObjectiveC.NSObject]?)
+  @objc override dynamic open func broadcastPaused()
+  @objc override dynamic open func broadcastResumed()
+  @objc override dynamic open func broadcastFinished()
+  @objc override dynamic open func finishBroadcastWithError(_ error: any Swift.Error)
+  @objc override dynamic open func processSampleBuffer(_ sampleBuffer: CoreMedia.CMSampleBuffer, with sampleBufferType: ReplayKit.RPSampleBufferType)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum AssistSessionState {
+  case success
+  case waiting
+  case failure(AssistSDK.AssistSessionState.Failure)
+  case sessionEnded(AssistSDK.AssistSessionState.EndState)
+  public enum EndState : Swift.Int {
+    case switchRoll, technicianended, customerended
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum Failure : Swift.Int {
+    case unknowError, invalidkey, internetlost, duplicateClient, timeOut, automaticReconnection, extensionAppNotResponding
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum RequestedType : Swift.Int {
+  public typealias RawValue = Swift.Int
+  case chatSent, stoppedShare, resumedShare, sessionEnded, pingExtension
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum AssistEventType {
+  case sessionConnected
+  case customerResumedSharing
+  case customerStoppedSharing
+  case chatSent
+  case chatReceived
+  case technicianClosedSession
+  case customerEndedSession
+  case participantLeft
+  case participantJoined(AssistSDK.Participant.Role.DeviceType)
+  case participantLost
+  case unknowError
+  case invalidkey
+  case internetlost
+  case duplicateClient
+  case timeOut
+  case automaticReconnection
+  case forceExit
+  case auth_user_session
+  case paid_user_session
+  case restartedSession
+  case successfulSessionCompletion
+  case generalError
+  case files_uploaded
+  case files_downloaded
+  case files_status_accepted
+  case files_status_cancelled
+  case files_status_timedOut
+  case files_status_failed
+  case files_status_completed
+  case files_status_stopped
+  case files_status_waiting
+  case freeSessionDurationLimitReached
+  case sessionCountLimitExceeded
+  case screenshare_consent_accepted
+  case screenshare_consent_denied
+  case apiError
+  case phoneCallDetectorSuccess
+  case phoneCallDetectorFailure
+  case phoneCallDuringSession
+  case phoneCallBeforeSession
+  case pnsPayloadReceived
+}
+public enum AssistLoaderType {
+  case loading
+  case fetching
+  case sessionTimeoutReached
+  case sessionCountExceded
+  public static func == (a: AssistSDK.AssistLoaderType, b: AssistSDK.AssistLoaderType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct AssistTechnicianDetail {
+  public var technician_name: Swift.String? {
+    get
+  }
+  public var license_type: Swift.String? {
+    get
+  }
+  public var technician_email: Swift.String? {
+    get
+  }
+}
+public enum ZService {
+  case assist, mdm
+  public static func == (a: AssistSDK.ZService, b: AssistSDK.ZService) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias ParticipantID = Swift.String
+public struct Participant : Swift.Equatable {
+  public enum NewFeatureSupport : Swift.String, Swift.Codable {
+    case free_session_duration_support, video_streaming, file_transfer
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func == (lhs: AssistSDK.Participant, rhs: AssistSDK.Participant) -> Swift.Bool
+  public enum State : Swift.String {
+    case connected
+    case exit
+    case lost
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Role {
+    case viewer(type: AssistSDK.Participant.Role.DeviceType)
+    case agent(type: AssistSDK.Participant.Role.DeviceType)
+    public enum DeviceType : Swift.String {
+      case activeX
+      case android
+      case iOS
+      case objectiveC
+      case html_5
+      case linux
+      public init?(rawValue: Swift.String)
+      public var isComputerParticpant: Swift.Bool {
+        get
+      }
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+  }
+  public let name: Swift.String
+  public var participantState: AssistSDK.Participant.State {
+    get
+  }
+  public let id: AssistSDK.ParticipantID
+  public let email: Swift.String
+  public var isParticipantAlive: Swift.Bool {
+    get
+  }
+  public let deviceType: AssistSDK.Participant.Role.DeviceType
+  public var isFileTransferAllowed: Swift.Bool {
+    get
+  }
+  public var supportedFeatures: [AssistSDK.Participant.NewFeatureSupport]? {
+    get
+  }
+  public var is_video_streaming_supported: Swift.Bool {
+    get
+  }
+}
+public struct AgentSettings {
+  public var remoteScreenBlankStatus: AssistSDK.FeatureConfigurationMode?
+  public var remoteInputStatus: AssistSDK.FeatureConfigurationMode?
+  public var clipBoardSharing: AssistSDK.ClipBoardSharing?
+  public var userConfirmationNotifications: [AssistSDK.AgentSettings.FeatureNotication]
+  public let isIdleTimeOutEnable: Swift.Bool?
+  public let idleTimeOutInternval: Foundation.TimeInterval?
+  public enum FeatureNotication : Swift.Int {
+    case joinSession, fileTransfer, screenShot, clipBoard
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct GeneralSettings {
+  public let isRemoteCursorShown: Swift.Bool
+}
+public struct Chat {
+  public let message: Swift.String
+  public let participantId: AssistSDK.ParticipantID
+  public let date: Foundation.Date
+  public init(chat message: Swift.String, participantId: Swift.String = "-1")
+}
+public struct UserConsentResponse : Swift.Codable {
+  public var client_id: Swift.String
+  public let feature_id: Swift.String
+  public let concern_response: Swift.String
+  public let apply_for_session: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserConsentRequest : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func encode(_ list: [AssistSDK.FWDFeature]) -> Foundation.Data?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FwdFeatureList : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FWDFeature : Swift.Codable, Swift.Equatable {
+  public let feature_id: Swift.Int?
+  public var enabled: Swift.Bool {
+    get
+  }
+  public let name: Swift.String?
+  public let message: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func encode(_ list: [AssistSDK.FWDFeature]) -> Foundation.Data?
+  public static func == (lhs: AssistSDK.FWDFeature, rhs: AssistSDK.FWDFeature) -> Swift.Bool
+}
+public class DisposableObject : Swift.Equatable {
+  public static func == (lhs: AssistSDK.DisposableObject, rhs: AssistSDK.DisposableObject) -> Swift.Bool
+  public init(value: Swift.AnyObject)
+  @objc deinit
+}
+public struct FileModel : Swift.Equatable, Swift.Codable {
+  public let meta: AssistSDK.FileMeta
+  public let isSend: Swift.Bool
+  public let state: AssistSDK.FileTransactionStatus
+  public static func == (lhs: AssistSDK.FileModel, rhs: AssistSDK.FileModel) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SummaryError : Swift.Codable {
+  public let code: Swift.Int?
+  public let message: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SummaryDuration : Swift.Codable {
+  public let hrs: Swift.Int?
+  public let mins: Swift.Int?
+  public let secs: Swift.Int?
+  public init(hrs: Swift.Int?, mins: Swift.Int?, secs: Swift.Int?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension AssistSDK.SummaryDuration {
+  public var isDurationAvailable: Swift.Bool {
+    get
+  }
+}
+public struct SummaryDetail : Swift.Codable {
+  public let session_key: Swift.String?
+  public let title: Swift.String?
+  public let start_time: Swift.String?
+  public let end_time: Swift.String?
+  public let duration: Swift.String?
+  public let customer_email: Swift.String?
+  public let creator_email: Swift.String?
+  public let creator_name: Swift.String?
+  public let tech_screen_name: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension AssistSDK.SummaryDetail {
+  public var isDurationAvailable: Swift.Bool {
+    get
+  }
+  public var formattedDuration: AssistSDK.SummaryDuration? {
+    get
+  }
+  public var secs: Swift.Int? {
+    get
+  }
+  public var mins: Swift.Int? {
+    get
+  }
+  public var hrs: Swift.Int? {
+    get
+  }
+}
+public struct SummaryJson : Swift.Codable {
+  public let representation: AssistSDK.SummaryDetail?
+  public let resource_type: Swift.String?
+  public let error: AssistSDK.SummaryError?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SessionInfo : Swift.Codable {
+  public var sessionKey: Swift.String {
+    get
+  }
+  public var authKey: Swift.String {
+    get
+  }
+  public var client_id: Swift.String {
+    get
+  }
+  public var client_token: Swift.String {
+    get
+  }
+  public init(from data: AssistSDK.RemoteSupportSessionData)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SessionOwner : Swift.Codable {
+  public let representation: AssistSDK.SessionOwnerDetail?
+  public let resource_type: Swift.String?
+  public let error: AssistSDK.SessionOwnerDetailError?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SessionOwnerDetail : Swift.Codable {
+  public let email: Swift.String?
+  public let name: Swift.String?
+  public let zuid: Swift.String?
+  public let license_type: Swift.String?
+  public let org_details: AssistSDK.SessionOwnerOrgDetail?
+  public let tech_screen_name: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SessionOwnerOrgDetail : Swift.Codable {
+  public let zsoid: Swift.Double?
+  public let org_name: Swift.String?
+  public let portal_url: Swift.String?
+  public let is_logo_exist: Swift.Bool?
+  public let logo: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SessionOwnerDetailError : Swift.Codable {
+  public let code: Swift.Double?
+  public let parameter_name: Swift.String?
+  public let message: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class RemoteSupportSessionData : Swift.Codable {
+  public var customerEmail: Swift.String?
+  public var representation: AssistSDK.RemoteSupportSessionData.Representation?
+  final public let resource_type: Swift.String
+  public var error: AssistSDK.APIErrorResponse?
+  public var session_token: Swift.String? {
+    get
+  }
+  public var client_token: Swift.String? {
+    get
+  }
+  public struct Representation : Swift.Codable {
+    public var session_details: AssistSDK.RemoteSupportSessionData.Representation.SessionDetails? {
+      get
+    }
+    public let gateway_details: AssistSDK.RemoteSupportSessionData.Representation.GatewayDetails?
+    public let client_details: AssistSDK.RemoteSupportSessionData.Representation.ClientDetails?
+    public struct SessionDetails : Swift.Codable {
+      public let session_key: Swift.String?
+      public var session_token: Swift.String? {
+        get
+      }
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public class GatewayDetails : Swift.Codable {
+      final public let web_socket_path: Swift.String?
+      final public let group: Swift.String?
+      final public let file_transfer_gateways: [Swift.String]?
+      public var gateway_servers: [Swift.String]? {
+        get
+      }
+      public var gateway_server: Foundation.URL? {
+        get
+      }
+      public var gateway_url: Foundation.URL? {
+        get
+      }
+      @objc deinit
+      public func encode(to encoder: any Swift.Encoder) throws
+      required public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct ClientDetails : Swift.Codable {
+      public let client_id: Swift.String?
+      public let client_role: Swift.Int?
+      public let client_token: Swift.String?
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func set_gw_name(host: Swift.String)
+    public func encode() throws -> Foundation.Data?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func set_token(_ token: Swift.String)
+  public static func decodeSessionConfig(data: Foundation.Data) -> AssistSDK.RemoteSupportSessionData?
+  public func encodeSessionConfig() -> Foundation.Data?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum AssistSessionMode : Swift.String, Swift.Codable {
+  case access
+  case support
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ScreenQuality : Swift.Int {
+  case low, good, best, full
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum SocketDisconnectStatus : Swift.Int {
+  case unknown, diffcon, invalidkey, switchgw, customerended, technicianended, internetlost, duplicateClient, switchRoll, timeOut, disconnect
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AssistScreenShare : ObjectiveC.NSObject {
+  convenience public init?(delegate: (any AssistSDK.AssistScreenShareProtocol)? = nil, feature_protocol: (any AssistSDK.AssistFeaturesProtocol)? = nil, image quality: AssistSDK.ScreenQuality = .good)
+  public func initiateScreenshare()
+  public func stopSession()
+  public func resumeSession()
+  public func endSession()
+  public func addImage(buffer: CoreMedia.CMSampleBuffer)
+  public func send(chat message: Swift.String)
+  @objc deinit
+}
+extension AssistSDK.AssistScreenShare {
+  public static func register(base_url: Foundation.URL = URL(string: "https://assist.zoho.com")!, session id: Swift.String, token encapi: Swift.String, appGroup g_identifier: Swift.String, client_name: Swift.String? = "Guest", completion: @escaping (AssistSDK.SessionValidation) -> Swift.Void)
+  public static func get_idc_base_url(for_session id: Swift.String) -> Foundation.URL?
+}
+@objc public enum AssistFeatures : Swift.Int {
+  case allowSession = 1
+  case chat
+  case clipBoard
+  case uac
+  case multimonitor
+  case ctrlAltDel
+  case powerOptions
+  case fileTransfer
+  case inviteTechnician
+  case twoWayScreenShare
+  case captureScreen
+  case groupComputer
+  case searchShort
+  case computerStatus
+  case requestControl
+  case freeLicense
+  case screenshot
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct FileMeta : Swift.Equatable, Swift.Codable {
+  public let id: Swift.Int
+  public let fileURL: Foundation.URL
+  public let size: Swift.Int
+  public let recipientID: Swift.String
+  public enum CodingKeys : Swift.CodingKey {
+    case id, fileURL, size, recipientID
+    public static func == (a: AssistSDK.FileMeta.CodingKeys, b: AssistSDK.FileMeta.CodingKeys) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public var hashValue: Swift.Int {
+      get
+    }
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode() -> Foundation.Data?
+  public static func decodeFrom(_ data: Foundation.Data) -> AssistSDK.FileMeta?
+  public static func == (lhs: AssistSDK.FileMeta, rhs: AssistSDK.FileMeta) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum FileTransactionStatus : Swift.Int, Swift.Codable {
+  case accepted
+  case cancelled
+  case failed
+  case completed
+  case stopped
+  case timeout
+  case waitingForCustomerConcern
+  case waitingForTechnicianConcern
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias JSON = [Swift.String : Any]
+public typealias JSONKey = Swift.String
+public struct JsonParser {
+  public init?(json: AssistSDK.JSON?)
+  public subscript<DataType>(key: AssistSDK.JSONKey) -> DataType? {
+    get
+  }
+  public func jsonParser(forKey key: AssistSDK.JSONKey) -> AssistSDK.JsonParser?
+  public func jsonParsers(forKey key: AssistSDK.JSONKey) -> [AssistSDK.JsonParser]?
+}
+public protocol AssistFeaturesProtocol : AnyObject {
+  func featuresReceived(fwdFeaturesList: AssistSDK.FwdFeatureList)
+  func userConcernRequestReceived(request: AssistSDK.UserConsentRequest, completion: @escaping (AssistSDK.UserConsentResponse) -> ())
+  func sessionRestricted(state: AssistSDK.FreeSessionEndState)
+}
+public protocol AssistScreenShareProtocol : AnyObject {
+  func didConnectSocket()
+  func didSocket(disconnected state: AssistSDK.SocketDisconnectStatus)
+  func didSessionConnected()
+  func didChangeImage(quality: AssistSDK.ScreenQuality)
+  func didChanage(participant: AssistSDK.Participant)
+  func didReceived(chat: AssistSDK.Chat)
+  func onFeaturesReceived(_ features: Foundation.NSArray)
+  func waitingForCustomerConcern(completion: @escaping (Swift.Bool) -> ())
+  var is_video_streaming_enabled: Swift.Bool { get }
+}
+public protocol FileTransferProtocol : AnyObject {
+  func onFileSendRequest(from participant: AssistSDK.Participant?, _ fileToSend: @escaping ([AssistSDK.FileModel]?) -> ())
+  func onChange(status: AssistSDK.FileTransactionStatus, for files: [AssistSDK.FileModel])
+  func onProgress(persent: CoreFoundation.CGFloat, file: AssistSDK.FileModel)
+  func onFileReceivedRequest(from participant: AssistSDK.Participant?, fileMeta: [AssistSDK.FileModel], _ approvalFileCompletion: @escaping ([AssistSDK.FileModel]?) -> ())
+}
+extension AssistSDK.AssistFeatures : Swift.Equatable {}
+extension AssistSDK.AssistFeatures : Swift.Hashable {}
+extension AssistSDK.AssistFeatures : Swift.RawRepresentable {}
+extension AssistSDK.ScreenQuality : Swift.Equatable {}
+extension AssistSDK.ScreenQuality : Swift.Hashable {}
+extension AssistSDK.ScreenQuality : Swift.RawRepresentable {}
+extension AssistSDK.AgentOSType : Swift.Equatable {}
+extension AssistSDK.AgentOSType : Swift.Hashable {}
+extension AssistSDK.SessionValidation.FailureState : Swift.Equatable {}
+extension AssistSDK.SessionValidation.FailureState : Swift.Hashable {}
+extension AssistSDK.AssistRequestErrorResponse : Swift.Equatable {}
+extension AssistSDK.AssistRequestErrorResponse : Swift.Hashable {}
+extension AssistSDK.RoleChangeStatus.RoleChangeError : Swift.Equatable {}
+extension AssistSDK.RoleChangeStatus.RoleChangeError : Swift.Hashable {}
+extension AssistSDK.FeatureConfigurationMode : Swift.Equatable {}
+extension AssistSDK.FeatureConfigurationMode : Swift.Hashable {}
+extension AssistSDK.FeatureConfigurationMode : Swift.RawRepresentable {}
+extension AssistSDK.Feature : Swift.Equatable {}
+extension AssistSDK.Feature : Swift.Hashable {}
+extension AssistSDK.ClipBoardSharing : Swift.Equatable {}
+extension AssistSDK.ClipBoardSharing : Swift.Hashable {}
+extension AssistSDK.ClipBoardSharing : Swift.RawRepresentable {}
+extension AssistSDK.UserConcern : Swift.Equatable {}
+extension AssistSDK.UserConcern : Swift.Hashable {}
+extension AssistSDK.UserConcern : Swift.RawRepresentable {}
+extension AssistSDK.APIErrorType : Swift.Equatable {}
+extension AssistSDK.APIErrorType : Swift.Hashable {}
+extension AssistSDK.FreeSessionEndState : Swift.Equatable {}
+extension AssistSDK.FreeSessionEndState : Swift.Hashable {}
+extension AssistSDK.AssistSessionState.EndState : Swift.Equatable {}
+extension AssistSDK.AssistSessionState.EndState : Swift.Hashable {}
+extension AssistSDK.AssistSessionState.EndState : Swift.RawRepresentable {}
+extension AssistSDK.AssistSessionState.Failure : Swift.Equatable {}
+extension AssistSDK.AssistSessionState.Failure : Swift.Hashable {}
+extension AssistSDK.AssistSessionState.Failure : Swift.RawRepresentable {}
+extension AssistSDK.RequestedType : Swift.Equatable {}
+extension AssistSDK.RequestedType : Swift.Hashable {}
+extension AssistSDK.RequestedType : Swift.RawRepresentable {}
+extension AssistSDK.AssistLoaderType : Swift.Equatable {}
+extension AssistSDK.AssistLoaderType : Swift.Hashable {}
+extension AssistSDK.ZService : Swift.Equatable {}
+extension AssistSDK.ZService : Swift.Hashable {}
+extension AssistSDK.Participant.NewFeatureSupport : Swift.Equatable {}
+extension AssistSDK.Participant.NewFeatureSupport : Swift.Hashable {}
+extension AssistSDK.Participant.NewFeatureSupport : Swift.RawRepresentable {}
+extension AssistSDK.Participant.State : Swift.Equatable {}
+extension AssistSDK.Participant.State : Swift.Hashable {}
+extension AssistSDK.Participant.State : Swift.RawRepresentable {}
+extension AssistSDK.Participant.Role.DeviceType : Swift.Equatable {}
+extension AssistSDK.Participant.Role.DeviceType : Swift.Hashable {}
+extension AssistSDK.Participant.Role.DeviceType : Swift.RawRepresentable {}
+extension AssistSDK.AgentSettings.FeatureNotication : Swift.Equatable {}
+extension AssistSDK.AgentSettings.FeatureNotication : Swift.Hashable {}
+extension AssistSDK.AgentSettings.FeatureNotication : Swift.RawRepresentable {}
+extension AssistSDK.AssistSessionMode : Swift.Equatable {}
+extension AssistSDK.AssistSessionMode : Swift.Hashable {}
+extension AssistSDK.AssistSessionMode : Swift.RawRepresentable {}
+extension AssistSDK.SocketDisconnectStatus : Swift.Equatable {}
+extension AssistSDK.SocketDisconnectStatus : Swift.Hashable {}
+extension AssistSDK.SocketDisconnectStatus : Swift.RawRepresentable {}
+extension AssistSDK.FileMeta.CodingKeys : Swift.Equatable {}
+extension AssistSDK.FileMeta.CodingKeys : Swift.Hashable {}
+extension AssistSDK.FileTransactionStatus : Swift.Equatable {}
+extension AssistSDK.FileTransactionStatus : Swift.Hashable {}
+extension AssistSDK.FileTransactionStatus : Swift.RawRepresentable {}
