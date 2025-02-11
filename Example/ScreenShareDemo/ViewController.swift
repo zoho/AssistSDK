@@ -42,10 +42,13 @@ class ViewController: UIViewController,UITextViewDelegate {
 //            APP TOKEN
             let token = "Abcd@123"
             
+//            Set name the customer name if you want its optional
+            var display_name = "Assist_client";
+            
 //            Validating token and registering session id
 //            At completion you will get SessionValidation enum response
-            
-            AssistSession.register(session: id, token: token, appGroup: "group.com.example.appgroup") {[weak self] (validationState) in
+//            You can set display name and base your for rebranding case. However, both parameters are optional.
+            AssistScreenShare.register(session: id, token: token, appGroup: "group.com.example.appgroup", client_name: "Assist_client") {[weak self] (validationState) in
                 
 //                Session registration completion block
                 
@@ -87,6 +90,8 @@ class ViewController: UIViewController,UITextViewDelegate {
                             self.infoLabel.text = "Error \(errorstate.localizedDescription)"
                         }
 
+                    case .continueSession:
+                        break;
                     }
                 }
             }

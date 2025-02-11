@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "ZAssistKit",
+    "printedName": "ZAssistKit",
     "children": [
       {
         "kind": "Import",
@@ -460,6 +460,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -565,6 +579,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -631,12 +659,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -724,12 +752,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "ZAssistKit.WebSocketProtocol?",
+                "printedName": "(any ZAssistKit.WebSocketProtocol)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "WebSocketProtocol",
-                    "printedName": "ZAssistKit.WebSocketProtocol",
+                    "printedName": "any ZAssistKit.WebSocketProtocol",
                     "usr": "s:10ZAssistKit17WebSocketProtocolP"
                   }
                 ],
@@ -738,7 +766,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WebSocketCallBack",
-                "printedName": "ZAssistKit.WebSocketCallBack",
+                "printedName": "any ZAssistKit.WebSocketCallBack",
                 "usr": "s:10ZAssistKit17WebSocketCallBackP"
               }
             ],
@@ -859,6 +887,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -900,12 +944,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -985,6 +1029,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1222,12 +1282,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "ZAssistKit.WebSocketCallBack?",
+                "printedName": "(any ZAssistKit.WebSocketCallBack)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "WebSocketCallBack",
-                    "printedName": "ZAssistKit.WebSocketCallBack",
+                    "printedName": "any ZAssistKit.WebSocketCallBack",
                     "usr": "s:10ZAssistKit17WebSocketCallBackP"
                   }
                 ],
@@ -1274,6 +1334,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1583,6 +1659,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -1914,6 +2004,20 @@
               "AccessControl"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -2942,6 +3046,22 @@
         "moduleName": "ZAssistKit",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2967,12 +3087,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "ZAssistKit.WebSocketProtocol?",
+                "printedName": "(any ZAssistKit.WebSocketProtocol)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "WebSocketProtocol",
-                    "printedName": "ZAssistKit.WebSocketProtocol",
+                    "printedName": "any ZAssistKit.WebSocketProtocol",
                     "usr": "s:10ZAssistKit17WebSocketProtocolP"
                   }
                 ],
@@ -2998,12 +3118,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "ZAssistKit.WebSocketProtocol?",
+                    "printedName": "(any ZAssistKit.WebSocketProtocol)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "WebSocketProtocol",
-                        "printedName": "ZAssistKit.WebSocketProtocol",
+                        "printedName": "any ZAssistKit.WebSocketProtocol",
                         "usr": "s:10ZAssistKit17WebSocketProtocolP"
                       }
                     ],
@@ -3030,12 +3150,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "ZAssistKit.WebSocketProtocol?",
+                    "printedName": "(any ZAssistKit.WebSocketProtocol)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "WebSocketProtocol",
-                        "printedName": "ZAssistKit.WebSocketProtocol",
+                        "printedName": "any ZAssistKit.WebSocketProtocol",
                         "usr": "s:10ZAssistKit17WebSocketProtocolP"
                       }
                     ],
@@ -3674,7 +3794,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "AssistSocketProtocol",
-                "printedName": "ZAssistKit.AssistSocketProtocol",
+                "printedName": "any ZAssistKit.AssistSocketProtocol",
                 "usr": "s:10ZAssistKit20AssistSocketProtocolP"
               }
             ],
@@ -3857,12 +3977,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -3943,6 +4063,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "WebSocketCallBack",
@@ -4041,6 +4175,20 @@
         "isFromExtension": true,
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
@@ -4142,66 +4290,10 @@
     },
     {
       "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 2335,
-      "length": 10,
-      "value": "\"Cellular\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 2389,
-      "length": 6,
-      "value": "\"WiFi\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 2435,
-      "length": 15,
-      "value": "\"No Connection\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 2679,
-      "length": 10,
-      "value": "\"Cellular\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 2721,
-      "length": 6,
-      "value": "\"WiFi\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 2766,
-      "length": 15,
-      "value": "\"No Connection\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
       "kind": "BooleanLiteral",
       "offset": 3145,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 3616,
-      "length": 15,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 3630,
-      "length": 1,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
@@ -4218,251 +4310,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5008,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 5120,
-      "length": 32,
-      "value": "\"uk.co.ashleymills.reachability\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7630,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 8637,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9230,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9302,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 10116,
-      "length": 19,
-      "value": "\"unavailable flags\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13120,
-      "length": 3,
-      "value": "\"W\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13126,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13167,
-      "length": 3,
-      "value": "\"R\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13173,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13223,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13229,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13280,
-      "length": 3,
-      "value": "\"t\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13286,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13338,
-      "length": 3,
-      "value": "\"i\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13344,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13395,
-      "length": 3,
-      "value": "\"C\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13401,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13451,
-      "length": 3,
-      "value": "\"D\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13457,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13501,
-      "length": 3,
-      "value": "\"l\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13507,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13545,
-      "length": 3,
-      "value": "\"d\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13551,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13571,
-      "length": 39,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13576,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13580,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13585,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13589,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13593,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13597,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13601,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13605,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/ZReachablity\/Sources\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 13609,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
@@ -4477,104 +4324,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1858,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3967,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 5323,
-      "length": 39,
-      "value": "\"gateway ::: \""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 5361,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 5675,
-      "length": 42,
-      "value": "\"socket handler \""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5713,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 5716,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 6614,
-      "length": 106,
-      "value": "\"ASK :::Disconnect callback triggred \""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 6662,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 6719,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "FloatLiteral",
-      "offset": 9117,
-      "length": 3,
-      "value": "0.2"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9201,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9418,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/SocketHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9693,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
       "kind": "BooleanLiteral",
       "offset": 390,
@@ -4585,90 +4334,6 @@
       "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
       "kind": "BooleanLiteral",
       "offset": 507,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "StringLiteral",
-      "offset": 859,
-      "length": 16,
-      "value": "\"Queue_13_above\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "StringLiteral",
-      "offset": 184,
-      "length": 22,
-      "value": "\"ZAssistKit.URLSessionCustomSocket\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "StringLiteral",
-      "offset": 2047,
-      "length": 19,
-      "value": "\"Write Error: Data\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3667,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "StringLiteral",
-      "offset": 3714,
-      "length": 12,
-      "value": "\"read again\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "StringLiteral",
-      "offset": 4080,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "StringLiteral",
-      "offset": 4429,
-      "length": 14,
-      "value": "\"Socket error\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4481,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4813,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5777,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "StringLiteral",
-      "offset": 6049,
-      "length": 25,
-      "value": "\"⚪️SOCKET ERROR🔴 \""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAssistKit\/native\/SocketHandler\/SocketHandler\/URLSessionSocket.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7215,
       "length": 5,
       "value": "false"
     }

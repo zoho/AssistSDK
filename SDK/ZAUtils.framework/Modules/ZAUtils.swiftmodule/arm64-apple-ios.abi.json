@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "ZAUtils",
+    "printedName": "ZAUtils",
     "children": [
       {
         "kind": "Import",
@@ -488,6 +488,22 @@
         "moduleName": "ZAUtils",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -703,6 +719,7 @@
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<Element>",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -713,6 +730,20 @@
             "printedName": "_DestructorSafeContainer",
             "usr": "s:s24_DestructorSafeContainerP",
             "mangledName": "$ss24_DestructorSafeContainerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1446,10 +1477,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1486,6 +1524,13 @@
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
             "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -1535,6 +1580,13 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
@@ -1734,6 +1786,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "SignedNumeric",
@@ -1969,6 +2035,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
@@ -2558,6 +2631,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReferenceConvertible",
             "printedName": "ReferenceConvertible",
             "children": [
@@ -3137,6 +3224,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -3355,6 +3456,20 @@
             "moduleName": "ZAUtils",
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -3779,6 +3894,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4429,10 +4558,25 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -5043,6 +5187,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5295,6 +5453,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CommonIntUtility",
             "printedName": "CommonIntUtility",
             "usr": "s:7ZAUtils16CommonIntUtilityP",
@@ -5476,6 +5648,13 @@
             ],
             "usr": "s:s10SIMDScalarP",
             "mangledName": "$ss10SIMDScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
@@ -5682,6 +5861,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CommonIntUtility",
             "printedName": "CommonIntUtility",
             "usr": "s:7ZAUtils16CommonIntUtilityP",
@@ -5852,6 +6045,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_FormatSpecifiable",
             "printedName": "_FormatSpecifiable",
             "children": [
@@ -5911,13 +6111,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinIntegerLiteral",
-            "printedName": "_ExpressibleByBuiltinIntegerLiteral",
-            "usr": "s:s35_ExpressibleByBuiltinIntegerLiteralP",
-            "mangledName": "$ss35_ExpressibleByBuiltinIntegerLiteralP"
-          },
-          {
-            "kind": "Conformance",
             "name": "FixedWidthInteger",
             "printedName": "FixedWidthInteger",
             "usr": "s:s17FixedWidthIntegerP",
@@ -5929,6 +6122,13 @@
             "printedName": "SignedInteger",
             "usr": "s:SZ",
             "mangledName": "$sSZ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinIntegerLiteral",
+            "printedName": "_ExpressibleByBuiltinIntegerLiteral",
+            "usr": "s:s35_ExpressibleByBuiltinIntegerLiteralP",
+            "mangledName": "$ss35_ExpressibleByBuiltinIntegerLiteralP"
           },
           {
             "kind": "Conformance",
@@ -6052,6 +6252,20 @@
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6229,6 +6443,13 @@
             ],
             "usr": "s:s10SIMDScalarP",
             "mangledName": "$ss10SIMDScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
@@ -6435,6 +6656,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CommonIntUtility",
             "printedName": "CommonIntUtility",
             "usr": "s:7ZAUtils16CommonIntUtilityP",
@@ -6602,6 +6837,13 @@
             ],
             "usr": "s:s10SIMDScalarP",
             "mangledName": "$ss10SIMDScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
@@ -7060,6 +7302,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -7143,6 +7399,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7283,6 +7553,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CustomStringConvertible",
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
@@ -7367,111 +7651,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Array_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 297,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Array_Extn.swift",
-      "kind": "BooleanLiteral",
-      "offset": 835,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Array_Extn.swift",
-      "kind": "BooleanLiteral",
-      "offset": 879,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Array_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 963,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Bool_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 236,
-      "length": 6,
-      "value": "\"true\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Bool_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 245,
-      "length": 7,
-      "value": "\"false\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Bool_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 305,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Bool_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 309,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/CGFloat_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 243,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/CGFloat_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 294,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/CGFloat_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 365,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/CGFloat_Extn.swift",
-      "kind": "FloatLiteral",
-      "offset": 536,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Data_Extn.swift",
-      "kind": "BooleanLiteral",
-      "offset": 563,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Data_Extn.swift",
-      "kind": "FloatLiteral",
-      "offset": 831,
-      "length": 6,
-      "value": "1024.0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Data_Extn.swift",
-      "kind": "FloatLiteral",
-      "offset": 840,
-      "length": 6,
-      "value": "1024.0"
-    },
-    {
       "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
       "kind": "BooleanLiteral",
       "offset": 329,
@@ -7491,342 +7670,6 @@
       "offset": 775,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 979,
-      "length": 50,
-      "value": "\"weekday symbol should be in form \""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 1028,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1108,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 1941,
-      "length": 13,
-      "value": "\"en_US_POSIX\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 3025,
-      "length": 23,
-      "value": "\"yyyy-MM-dd HH:mm:ss.S\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 4886,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "FloatLiteral",
-      "offset": 5037,
-      "length": 6,
-      "value": "1000.0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 5116,
-      "length": 48,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 5163,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5188,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Date_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5244,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/File\/FileManager_Extn.swift",
-      "kind": "BooleanLiteral",
-      "offset": 309,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Int_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 537,
-      "length": 9,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Int_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 545,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Int_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 817,
-      "length": 3,
-      "value": "\"+\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Int_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 919,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Int_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 984,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Int_Extn.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1222,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Int_Extn.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1504,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/Milisecound.swift",
-      "kind": "IntegerLiteral",
-      "offset": 278,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/String_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 290,
-      "length": 51,
-      "value": "\"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/String_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 385,
-      "length": 17,
-      "value": "\"SELF MATCHES %@\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/String_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 524,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/String_Extn.swift",
-      "kind": "FloatLiteral",
-      "offset": 604,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/String_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1111,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/String_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1409,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/String_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 1928,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/String_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 2020,
-      "length": 3,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 272,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 341,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 469,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 496,
-      "length": 3,
-      "value": "\"0\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 634,
-      "length": 71,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 666,
-      "length": 1,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 700,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 704,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 815,
-      "length": 36,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 833,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 847,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 850,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 929,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 935,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 939,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 945,
-      "length": 3,
-      "value": "\"+\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 979,
-      "length": 71,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 1011,
-      "length": 1,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1045,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/kishore-2052\/Work\/Git\/AssistScreenShareKit\/native\/SDK_project\/Pods\/ZAUtils\/native\/RJFrameWork\/RJFrameWork\/Foundation_Extention\/DataType\/TimeZone_Extn.swift",
-      "kind": "StringLiteral",
-      "offset": 1049,
-      "length": 1,
-      "value": "\"\""
     }
   ]
 }
