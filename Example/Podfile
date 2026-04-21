@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '15.0'
 
 
 target 'BroadCastApp' do
@@ -7,6 +7,12 @@ target 'BroadCastApp' do
   pod "AssistSDK", :git => 'https://github.com/zoho/AssistSDK.git'
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+
+  # ZReachability - forked and modified version of ReachabilitySwift
+  pod 'ReachabilitySwift', :git => 'https://github.com/kishorekumar007/ZReachability.swift.git'
+
+  # Local podspec - references all XCFrameworks in SDK folder (parent directory)
+  # pod "AssistSDK", :path => '../'
 
   # Pods for BroadCastApp
 
@@ -17,6 +23,12 @@ target 'ScreenShareDemo' do
 
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+
+  # ZReachability - forked and modified version of ReachabilitySwift
+  pod 'ReachabilitySwift', :git => 'https://github.com/kishorekumar007/ZReachability.swift.git'
+
+  # Local podspec - references all XCFrameworks in SDK folder (parent directory)
+  # pod "AssistSDK", :path => '../'
 
   # Pods for ScreenShareDemo
 

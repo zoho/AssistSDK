@@ -7,6 +7,7 @@
 
 import ReplayKit
 import AssistSDK
+import Reachability
 
 @available(iOSApplicationExtension 10.0, *)
 class SampleHandler: AssistSampleHandler {
@@ -21,6 +22,11 @@ class SampleHandler: AssistSampleHandler {
         set {}
     }
     
+    /// You can override the methods that are provided as per document for Video Streaming
+    override var screenshare_config: AssistSDK.Screenshare_configs? {
+        .init(p2p_configs: nil, codec_configs: [.init(codec_type: .h264), .init(codec_type: .h265)])
+    }
+
     
     /// You can override the methods that are provided as per document
     /// However, its better calling the super to ensure the funtionalities doen't broke
@@ -52,6 +58,7 @@ class SampleHandler: AssistSampleHandler {
         
     }
     
+
     
 }
 

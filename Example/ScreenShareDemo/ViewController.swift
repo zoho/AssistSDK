@@ -5,7 +5,8 @@
 import UIKit
 import CoreGraphics
 import AssistSDK
-
+import Foundation_Extention
+import ZSocketHandler
 
 class ViewController: UIViewController,UITextViewDelegate {
     
@@ -21,7 +22,7 @@ class ViewController: UIViewController,UITextViewDelegate {
         
         super.viewDidLoad()
         
-        infoLabel.isHidden = true
+//        infoLabel.isHidden = true
         
         loader.isHidden = true
         
@@ -35,7 +36,8 @@ class ViewController: UIViewController,UITextViewDelegate {
         loader.isHidden = false
         loader.startAnimating()
         
-        self.infoLabel.isHidden = true
+//        self.infoLabel.isHidden = true
+        self.infoLabel.textColor = .red
         
         if let id = textview.text, !id.isEmpty {
             

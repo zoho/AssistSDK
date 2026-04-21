@@ -29,8 +29,7 @@ Pod::Spec.new do |s|
   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
   copies of the Software, and to permit persons to whom the Software is
   furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in allcd 
+  The above copyright notice and this permission notice shall be included in all
   copies or substantial portions of the Software.
 
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -44,20 +43,12 @@ Pod::Spec.new do |s|
 }
   s.author       = { "Kishore Kumar" => "kishorekumar.n@zohocorp.com" }
   # s.platform     = :ios, '8.0'
-  s.ios.deployment_target = '9.0'
-
+  s.ios.deployment_target = '15.0'
   s.source           = {:git => "https://github.com/zoho/AssistSDK.git", :commit => "1269f46b57803a67c75d2b983b2521a7454d86d1"}
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
   s.social_media_url = "http://zoho.com"
-  # s.source_files = 'AssistScreenShareKit.framework/Headers/*.{h,m,swift}'
-  s.ios.vendored_frameworks = 'SDK/*.framework'
-  # s.public_header_files = "SDK/AssistScreenShareKit.framework/Headers/*.h"
-  # s.module_map = 'SDK/AssistSDK.framework/Modules/module.modulemap'
+  s.ios.vendored_frameworks = 'SDK/*.xcframework'
+  s.dependency 'ReachabilitySwift'
   s.module_name  = 'AssistSDK'
-
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
-
 end

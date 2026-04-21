@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12BD8BBD2F2CAB043C33322D /* Pods_ScreenShareDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BEEA352733575643CF065D /* Pods_ScreenShareDemo.framework */; };
+		07B0AA77B4BE67D652DCD474 /* Pods_BroadCastApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C7AC6C727784716E66F693 /* Pods_BroadCastApp.framework */; };
+		65637E2786D84A7B8BE7A858 /* Pods_ScreenShareDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DDA7D5E5ED0C8CE06F2527 /* Pods_ScreenShareDemo.framework */; };
+		A60E0E232F17B52B005C96BA /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C230B13C22929E0500B9BB80 /* ReplayKit.framework */; };
+		A60E0E242F17B52B005C96BA /* ReplayKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C230B13C22929E0500B9BB80 /* ReplayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A65F8B2F2F87B4B50025A601 /* AssistSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A65F8B2E2F87B4B50025A601 /* AssistSDK */; };
+		A65F8B322F87B4F40025A601 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A65F8B312F87B4F40025A601 /* Reachability */; };
+		A65F8B342F87B5C50025A601 /* AssistSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A65F8B332F87B5C50025A601 /* AssistSDK */; };
+		A65F8B362F87B5C50025A601 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A65F8B352F87B5C50025A601 /* Reachability */; };
 		C230B12022929D7500B9BB80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230B11F22929D7500B9BB80 /* AppDelegate.swift */; };
 		C230B12222929D7500B9BB80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230B12122929D7500B9BB80 /* ViewController.swift */; };
 		C230B12522929D7500B9BB80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C230B12322929D7500B9BB80 /* Main.storyboard */; };
 		C230B12722929D7D00B9BB80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C230B12622929D7D00B9BB80 /* Assets.xcassets */; };
 		C230B12A22929D7D00B9BB80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C230B12822929D7D00B9BB80 /* LaunchScreen.storyboard */; };
-		C230B13D22929E0500B9BB80 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C230B13C22929E0500B9BB80 /* ReplayKit.framework */; };
 		C230B14022929E0500B9BB80 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230B13F22929E0500B9BB80 /* SampleHandler.swift */; };
 		C230B15322929E0500B9BB80 /* BroadCastApp.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C230B13A22929E0400B9BB80 /* BroadCastApp.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D494EEBDEDB9A317163D4CA0 /* Pods_BroadCastApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770CA63632703437B63043ED /* Pods_BroadCastApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A60E0E252F17B52B005C96BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A60E0E242F17B52B005C96BA /* ReplayKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C230B13522929DE400B9BB80 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,12 +70,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		52BEEA352733575643CF065D /* Pods_ScreenShareDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenShareDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		770CA63632703437B63043ED /* Pods_BroadCastApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BroadCastApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		792672CDF3ACC94154817F7F /* Pods-BroadCastApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroadCastApp.release.xcconfig"; path = "Target Support Files/Pods-BroadCastApp/Pods-BroadCastApp.release.xcconfig"; sourceTree = "<group>"; };
-		7A3733ABAE2FD90F45341017 /* Pods-ScreenShareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShareDemo.release.xcconfig"; path = "Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo.release.xcconfig"; sourceTree = "<group>"; };
-		95D56D8FFCE217611768417F /* Pods-BroadCastApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroadCastApp.debug.xcconfig"; path = "Target Support Files/Pods-BroadCastApp/Pods-BroadCastApp.debug.xcconfig"; sourceTree = "<group>"; };
-		B405B0BF4BC0FDD9B2445B20 /* Pods-ScreenShareDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShareDemo.debug.xcconfig"; path = "Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2FF8E6AB62A8AE5486DC6180 /* Pods-ScreenShareDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShareDemo.debug.xcconfig"; path = "Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		35C7AC6C727784716E66F693 /* Pods_BroadCastApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BroadCastApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		849BA4B4E2FCE600E486930B /* Pods-BroadCastApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroadCastApp.release.xcconfig"; path = "Target Support Files/Pods-BroadCastApp/Pods-BroadCastApp.release.xcconfig"; sourceTree = "<group>"; };
+		94DDA7D5E5ED0C8CE06F2527 /* Pods_ScreenShareDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenShareDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C230B11C22929D7500B9BB80 /* ScreenShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C230B11F22929D7500B9BB80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C230B12122929D7500B9BB80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +88,8 @@
 		C230B14822929E0500B9BB80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C230B15B22929F5C00B9BB80 /* BroadCastApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BroadCastApp.entitlements; sourceTree = "<group>"; };
 		C230B15C22929F6800B9BB80 /* ScreenShareDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenShareDemo.entitlements; sourceTree = "<group>"; };
+		D92E5C31ED73C04891CC75DA /* Pods-BroadCastApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroadCastApp.debug.xcconfig"; path = "Target Support Files/Pods-BroadCastApp/Pods-BroadCastApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DA308FD964E99DAA1293483B /* Pods-ScreenShareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShareDemo.release.xcconfig"; path = "Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12BD8BBD2F2CAB043C33322D /* Pods_ScreenShareDemo.framework in Frameworks */,
+				A65F8B2F2F87B4B50025A601 /* AssistSDK in Frameworks */,
+				A65F8B322F87B4F40025A601 /* Reachability in Frameworks */,
+				65637E2786D84A7B8BE7A858 /* Pods_ScreenShareDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,21 +107,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C230B13D22929E0500B9BB80 /* ReplayKit.framework in Frameworks */,
-				D494EEBDEDB9A317163D4CA0 /* Pods_BroadCastApp.framework in Frameworks */,
+				A65F8B342F87B5C50025A601 /* AssistSDK in Frameworks */,
+				A65F8B362F87B5C50025A601 /* Reachability in Frameworks */,
+				A60E0E232F17B52B005C96BA /* ReplayKit.framework in Frameworks */,
+				07B0AA77B4BE67D652DCD474 /* Pods_BroadCastApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3DE197A69B4C06F014AE8474 /* Pods */ = {
+		74F3C10421FA488B656A616A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				95D56D8FFCE217611768417F /* Pods-BroadCastApp.debug.xcconfig */,
-				792672CDF3ACC94154817F7F /* Pods-BroadCastApp.release.xcconfig */,
-				B405B0BF4BC0FDD9B2445B20 /* Pods-ScreenShareDemo.debug.xcconfig */,
-				7A3733ABAE2FD90F45341017 /* Pods-ScreenShareDemo.release.xcconfig */,
+				D92E5C31ED73C04891CC75DA /* Pods-BroadCastApp.debug.xcconfig */,
+				849BA4B4E2FCE600E486930B /* Pods-BroadCastApp.release.xcconfig */,
+				2FF8E6AB62A8AE5486DC6180 /* Pods-ScreenShareDemo.debug.xcconfig */,
+				DA308FD964E99DAA1293483B /* Pods-ScreenShareDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -115,7 +135,7 @@
 				C230B13E22929E0500B9BB80 /* BroadCastApp */,
 				C230B13B22929E0500B9BB80 /* Frameworks */,
 				C230B11D22929D7500B9BB80 /* Products */,
-				3DE197A69B4C06F014AE8474 /* Pods */,
+				74F3C10421FA488B656A616A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,8 +167,8 @@
 			children = (
 				C230B13C22929E0500B9BB80 /* ReplayKit.framework */,
 				C230B14822929E0500B9BB80 /* UIKit.framework */,
-				770CA63632703437B63043ED /* Pods_BroadCastApp.framework */,
-				52BEEA352733575643CF065D /* Pods_ScreenShareDemo.framework */,
+				35C7AC6C727784716E66F693 /* Pods_BroadCastApp.framework */,
+				94DDA7D5E5ED0C8CE06F2527 /* Pods_ScreenShareDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,13 +190,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C230B12E22929D7D00B9BB80 /* Build configuration list for PBXNativeTarget "ScreenShareDemo" */;
 			buildPhases = (
-				86639D417DD8BAC6A151C315 /* [CP] Check Pods Manifest.lock */,
+				373463DD9018CA8E628A76EB /* [CP] Check Pods Manifest.lock */,
 				C230B11822929D7500B9BB80 /* Sources */,
 				C230B11922929D7500B9BB80 /* Frameworks */,
 				C230B11A22929D7500B9BB80 /* Resources */,
 				C230B13522929DE400B9BB80 /* Embed Frameworks */,
 				C230B15A22929E0500B9BB80 /* Embed App Extensions */,
-				DA5AC3E1CC59A9196A7961B7 /* [CP] Embed Pods Frameworks */,
+				0559FE36CDD5D52EEAD8A330 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,10 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C230B15722929E0500B9BB80 /* Build configuration list for PBXNativeTarget "BroadCastApp" */;
 			buildPhases = (
-				EB3D579C479D81364F13AEEF /* [CP] Check Pods Manifest.lock */,
+				8788F2DC9DF5E8A6EA7A31AF /* [CP] Check Pods Manifest.lock */,
 				C230B13622929E0400B9BB80 /* Sources */,
 				C230B13722929E0400B9BB80 /* Frameworks */,
 				C230B13822929E0400B9BB80 /* Resources */,
+				A60E0E252F17B52B005C96BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,7 +295,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		86639D417DD8BAC6A151C315 /* [CP] Check Pods Manifest.lock */ = {
+		0559FE36CDD5D52EEAD8A330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		373463DD9018CA8E628A76EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,24 +334,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DA5AC3E1CC59A9196A7961B7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenShareDemo/Pods-ScreenShareDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB3D579C479D81364F13AEEF /* [CP] Check Pods Manifest.lock */ = {
+		8788F2DC9DF5E8A6EA7A31AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -503,27 +524,29 @@
 		};
 		C230B12F22929D7D00B9BB80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B405B0BF4BC0FDD9B2445B20 /* Pods-ScreenShareDemo.debug.xcconfig */;
+			baseConfigurationReference = 2FF8E6AB62A8AE5486DC6180 /* Pods-ScreenShareDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ScreenShareDemo/ScreenShareDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7VPXG96P25;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ScreenShareDemo",
 				);
 				INFOPLIST_FILE = ScreenShareDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.screensharedemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.assist.customer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Assist Customer Development";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -531,27 +554,29 @@
 		};
 		C230B13022929D7D00B9BB80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A3733ABAE2FD90F45341017 /* Pods-ScreenShareDemo.release.xcconfig */;
+			baseConfigurationReference = DA308FD964E99DAA1293483B /* Pods-ScreenShareDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ScreenShareDemo/ScreenShareDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7VPXG96P25;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ScreenShareDemo",
 				);
 				INFOPLIST_FILE = ScreenShareDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.screensharedemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.assist.customer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Assist Customer Development";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,26 +584,28 @@
 		};
 		C230B15822929E0500B9BB80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95D56D8FFCE217611768417F /* Pods-BroadCastApp.debug.xcconfig */;
+			baseConfigurationReference = D92E5C31ED73C04891CC75DA /* Pods-BroadCastApp.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = BroadCastApp/BroadCastApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7VPXG96P25;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ScreenShareDemo",
 				);
 				INFOPLIST_FILE = BroadCastApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.screensharedemo.broadcast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.assist.customer.broadcast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Assist Customer Broadcast";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -587,26 +614,28 @@
 		};
 		C230B15922929E0500B9BB80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 792672CDF3ACC94154817F7F /* Pods-BroadCastApp.release.xcconfig */;
+			baseConfigurationReference = 849BA4B4E2FCE600E486930B /* Pods-BroadCastApp.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = BroadCastApp/BroadCastApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7VPXG96P25;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ScreenShareDemo",
 				);
 				INFOPLIST_FILE = BroadCastApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.screensharedemo.broadcast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.assist.customer.broadcast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Assist Customer Broadcast";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -644,6 +673,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A65F8B2D2F87B4B50025A601 /* XCLocalSwiftPackageReference "AssistSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../AssistSDK;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A65F8B302F87B4F40025A601 /* XCRemoteSwiftPackageReference "ZReachability.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishorekumar007/ZReachability.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.41;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A65F8B2E2F87B4B50025A601 /* AssistSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AssistSDK;
+		};
+		A65F8B312F87B4F40025A601 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A65F8B302F87B4F40025A601 /* XCRemoteSwiftPackageReference "ZReachability.swift" */;
+			productName = Reachability;
+		};
+		A65F8B332F87B5C50025A601 /* AssistSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A65F8B2D2F87B4B50025A601 /* XCLocalSwiftPackageReference "AssistSDK" */;
+			productName = AssistSDK;
+		};
+		A65F8B352F87B5C50025A601 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A65F8B302F87B4F40025A601 /* XCRemoteSwiftPackageReference "ZReachability.swift" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C230B11422929D7500B9BB80 /* Project object */;
 }
