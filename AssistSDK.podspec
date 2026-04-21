@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.author       = { "Kishore Kumar" => "kishorekumar.n@zohocorp.com" }
   # s.platform     = :ios, '8.0'
   s.ios.deployment_target = '15.0'
-  s.source           = {:git => "https://github.com/zoho/AssistSDK.git", :commit => "1269f46b57803a67c75d2b983b2521a7454d86d1"}
+  s.source           = {:git => "https://github.com/zoho/AssistSDK.git", :tag => "0.1.13"}
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
   s.social_media_url = "http://zoho.com"
